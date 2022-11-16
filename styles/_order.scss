@@ -1,0 +1,41 @@
+.order {
+    .order__content {
+        margin: 121px auto 142px;
+
+        .order__title {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .order__items {
+            margin-top: 172px;
+            display: flex;
+            justify-content: space-around;
+            gap: 150px;
+
+            .order__item {
+                text-align: center;
+
+                .order__text {
+                    margin: 38px 0 0;
+                }
+            }
+        }
+    }
+}
+
+.order__img1 {
+    content: url(../pictures/order/o_ico1.png);
+}
+
+.order__img2 {
+    content: url(../pictures/order/o_ico2.png);
+}
+
+.order__img3 {
+    content: url(../pictures/order/o_ico3.png);
+}
+
+.order__img4 {
+    content: url(../pictures/order/o_ico4.png);
+}

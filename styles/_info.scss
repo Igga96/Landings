@@ -1,0 +1,108 @@
+.info {
+    .container {
+        background: url(../pictures/info/bg_l.png), url(../pictures/info/bg_r.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 23%, 23%;
+        background-position: bottom left, right 80%;
+    }
+
+    .info__content {
+        margin: 0 0 190px;
+
+        .info__title {
+            margin: 69px auto;
+            max-width: 590px;
+        }
+
+        .info__photos {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 90px;
+
+            .info__config {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 40px;
+
+                .config__item {
+                    display: flex;
+                    align-items: center;
+                    background: linear-gradient(228.55deg, #4A3E56 11.03%, #8891BC 84.36%);
+                    border-radius: 12px;
+                    width: 400px;
+                    height: 124px;
+                    padding-left: 30px;
+
+                    div {
+                        max-height: 54px;
+                        max-width: 54px;
+                    }
+                }
+            }
+        }
+
+
+        .info__description {
+            display: flex;
+            justify-content: center;
+            gap: 159px;
+
+
+            .description__image {
+                padding-top: 114px;
+
+                .description__title {
+                    margin: 0 auto;
+                    max-width: 420px;
+                    padding-bottom: 44px;
+                }
+            }
+
+            .description__text {
+                max-width: 522px;
+                padding-top: 290px;
+            }
+        }
+    }
+}
+
+.config__text {
+    padding-left: 30px;
+}
+
+.item1 {
+    content: url(../pictures/info/i_ico1.png);
+}
+
+.item2 {
+    content: url(../pictures/info/i_ico2.png);
+}
+
+.item3 {
+    content: url(../pictures/info/i_ico3.png);
+}
+
+.item4 {
+    content: url(../pictures/info/i_ico4.png);
+}
+
+.item5 {
+    content: url(../pictures/info/i_ico5.png);
+}
+
+.item6 {
+    content: url(../pictures/info/i_ico6.png);
+}
+
+.button__circle-left-img {
+    content: url(../pictures/info/btn_l.png);
+}
+
+.button__circle-right-img {
+    content: url(../pictures/info/btn_r.png);
+}
+
+.description__img {
+    content: url(../pictures/info/i_d_img.png);
+}

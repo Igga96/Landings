@@ -1,0 +1,62 @@
+.discount {
+    .discount__title {
+        text-align: center;
+        margin: 131px auto 156px;
+    }
+
+    .discount__content {
+        display: flex;
+        justify-content: center;
+        gap: 78px;
+        margin-bottom: 137px;
+
+        .discount__item {
+            .discount__card {
+                display: flex;
+                align-items: center;
+
+
+                .discount__images {
+                    display: inline-flex;
+                    align-items: center;
+
+                    .discount__image {
+                        position: relative;
+                        z-index: 10;
+                    }
+
+                    .discount__image1 {
+                        left: -25%;
+                        z-index: 1;
+                    }
+
+                    .discount__image2 {
+                        left: -12.5%;
+                        z-index: 1;
+                    }
+
+                    .discount__image3 {
+                        left: -25%;
+                        z-index: 0;
+                        margin: 0;
+                    }
+                    .discount__image4 {
+                        left: -20%;
+                        z-index: 0;
+                        margin: 0;
+                    }
+
+                    .discount__text {
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.discount__image {
+    content: url(../pictures/discount/d_ico.png);
+    width: 134px;
+
+}

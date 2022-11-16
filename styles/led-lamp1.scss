@@ -1,0 +1,150 @@
+@import "_fonts.scss";
+@import "_product.scss";
+@import "_info.scss";
+@import "_video.scss";
+@import "_discount.scss";
+@import "_suggest.scss";
+@import "_order.scss";
+@import "_sale.scss";
+@import "_footer.scss";
+@import "_carousel.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    background-color: #E6E6E6;
+
+}
+
+.dark {
+    background: #363636;
+
+    .product__text {
+        display: none;
+    }
+
+    .product__button-desktop {
+        margin-left: 345px;
+    }
+
+    .product__content-blur {
+        display: block;
+        position: absolute;
+        top: -120px;
+        width: 1500px;
+        height: 1531px;
+        background: url(../pictures/product/Rectangle52.png);
+        opacity: 0.4;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .product__button2 {
+        z-index: 1211111;
+    }
+
+    .blur {
+        display: none;
+    }
+}
+
+.product__content-blur {
+    display: none;
+}
+
+/*
+div {
+    border: 1px solid black;
+}
+
+section {
+    border: 1px solid black;
+}
+*/
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #363636;
+    &:hover{
+        text-decoration: underline;
+        color:#A41B1B
+    }
+}
+
+
+/*container and wrpapper*/
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 1660px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.product {
+    height: 1518px;
+}
+
+.info {
+    height: 1884px;
+}
+
+.video {
+    height: 1320px;
+}
+
+
+.button__on-off {
+    display: inline-flex;
+    width: 314px;
+    height: 54px;
+    justify-content: space-around;
+
+    .button_l {
+        width: 174px;
+        height: 54px;
+    }
+
+}
+
+.button__circle {
+    height: 64px;
+    width: 64px;
+    border: #E6E6E6;
+    border-radius: 50%;
+    background: #E6E6E6;
+    box-shadow: -2px 2px 23px 2px rgba(0, 0, 0, 0.15);
+}
+
+button {
+    color: #FFFFFF;
+
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.button__bg-red {
+    background: #A41B1B;
+    border-radius: 59px;
+    &:hover{
+        background: #e45b5b;
+    }
+}
+
+.product__button {
+    padding: 24px 113px;
+}

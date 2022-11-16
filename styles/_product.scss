@@ -1,0 +1,150 @@
+.product {
+    .container {
+        background: url(../pictures/product/pr_bg_l1.png), url(../pictures/product/pr_bg_l2.png), url(../pictures/product/pr_bg_r.png), url(../pictures/product/mask_group.png);
+        ;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 19%, 19.2%, 51%, 49.5%;
+        background-position: left 62%, left 79.2%, right top, right -110px;
+    }
+
+    .product__content {
+        display: flex;
+
+        .product__content-left {
+            margin-top: 84px;
+
+            .product__link {
+                margin: 0;
+            }
+
+            .product__button1 {
+                display: none;
+            }
+
+            .product__title1 {
+                padding-top: 261px;
+                margin: 0;
+            }
+
+            .product__title2 {
+                margin: 0;
+                padding-bottom: 64px;
+            }
+
+            .product__button2 {
+                padding: 24px 113px;
+
+            }
+
+            .product__title3 {
+                margin: 0;
+                padding-top: 173px;
+                max-width: 656px;
+                padding-bottom: 132px;
+            }
+        }
+
+        .product__content-right {
+            display: inline-flex;
+
+            .product__circle {
+                .circle__photo {
+                    position: absolute;
+                    right: 2%;
+                    top: 5%;
+                    transform: rotate(-4.43deg);
+                    width: 43.5%;
+                }
+
+            }
+
+            .product__text {
+                position: relative;
+                left: -100px;
+                padding-top: 798px;
+                text-align: center;
+
+                .product__text1 {
+                    margin: 0;
+                    padding-bottom: 6px;
+                }
+
+                .product__text2 {
+                    margin: 0;
+                    padding-bottom: 10px;
+                }
+
+                .product__text3 {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .product__benefits {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 150px;
+        padding: 79px 0 146px 0;
+
+        .benefits {
+            text-align: center;
+
+            .benefits__title {
+                margin: 0;
+                padding: 34px 0 0 0;
+                max-width: 280px;
+            }
+        }
+    }
+}
+
+.image1 {
+    content: url(../pictures/product/pr_ico1.png);
+}
+
+.image2 {
+    content: url(../pictures/product/pr_ico2.png);
+}
+
+.image3 {
+    content: url(../pictures/product/pr_ico3.png);
+}
+
+.image4 {
+    content: url(../pictures/product/pr_ico4.png);
+}
+
+.button__on-off {
+    margin: 940px 20px 0 20px;
+    width: 314px;
+    height: 54px;
+    border: linear-gradient(228.55deg, #4A3E56 11.03%, #8891BC 84.36%);
+    border-radius: 68px;
+    text-align: center;
+    background: #E6E6E6;
+
+    .button__of {
+        width: 50%;
+        height: 54px;
+        border-radius: 68px;
+    }
+    .button__on {
+        width: 50%;
+        height: 54px;
+        border-radius: 68px;
+        background: #E6E6E6;
+        color: #363636;;
+    }
+
+    .button__active {
+        position: relative;
+        background: linear-gradient(228.55deg, #4A3E56 11.03%, #8891BC 84.36%);
+        border-radius: 68px;
+        width: 174px;
+        height: 54px;
+        z-index: 1;
+        color: #FFFFFF;
+    }
+}
