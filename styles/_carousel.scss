@@ -1,0 +1,80 @@
+.info__cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+    width: 100%;
+
+    .slider {
+        max-height: 600px;
+        width: 600px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .slider__line {
+            width: 100%;
+            max-height: 600px;
+            display: flex;
+            position: relative;
+            left: 0;
+            transition: 0.7s ease-in-out;
+
+            .slider__image {
+                width: 600px;
+                max-height: 600px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    padding: 0 150px;
+                }
+            }
+        }
+    }
+}
+
+.info__slider {
+    display: flex;
+    margin: 110px auto 90px;
+    width: 332px;
+    height: 15px;
+    background: #D9D9D9;
+    border-radius: 28px;
+
+
+    .slider__thumb {
+        position: relative;
+        left: 0;
+        width: 140px;
+        height: 15px;
+        background: linear-gradient(228.55deg, #4A3E56 11.03%, #8891BC 84.36%);
+        border-radius: 28px;
+        cursor: pointer;
+    }
+}
+
+.slider__image1 {
+    content: url(../pictures/info/carousel_1.png);
+
+}
+
+.slider__image2 {
+    content: url(../pictures/info/carousel_2.png);
+
+}
+
+.slider__image3 {
+    content: url(../pictures/info/carousel_3.png);
+
+}
+
+.slider__image4 {
+    content: url(../pictures/info/carousel_4.png);
+
+}
+
+.slider__image5 {
+    content: url(../pictures/info/carousel_5.png);
+
+}

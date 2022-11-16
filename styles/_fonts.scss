@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    color: #363636;
+}
+
+.product__link {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 41px;
+    background: linear-gradient(228.55deg, #4A3E56 11.03%, #8891BC 84.36%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.product__title1 {
+    font-weight: 700;
+    font-size: 92px;
+    line-height: 106px;
+    text-transform: uppercase;
+}
+
+.product__title2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+    color: #8C94BD;
+    text-transform: uppercase;
+}
+
+.product__title3 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+    text-transform: uppercase;
+}
+
+.product__text1 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 41px;
+}
+
+.product__text2 {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 83px;
+}
+
+.product__text3 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #A3A3A3;
+}
+
+
+
+
+
+.benefits__title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 32px;
+    line-height: 120%;
+    word-break: break-all;
+}
+
+
+
+.info__title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 120%;
+    text-align: center;
+
+}
+
+.config__text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 120%;
+    color: #E6E6E6;
+    max-width: 301px;
+
+}
+
+.description__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 41px;
+    text-align: center;
+}
+
+.description__text {
+    h4 {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 120%;
+        background: linear-gradient(228.55deg, #4A3E56 11.03%, #8891BC 84.36%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin: 0;
+        padding: 0 0 12px;
+    }
+
+
+    p {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        margin: 0;
+        padding: 0 0 36px;
+    }
+}
+
+.video__text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: #E6E6E6;
+}
+
+.discount__title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 100%;
+}
+
+.item__title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 100%;
+}
+
+
+.discount__text {
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 100%;
+    color: #4A3E56;
+}
+
+.suggest__title {
+    font-size: 52px;
+    line-height: 120%;
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.price {
+    font-weight: 500;
+}
+
+.price1 {
+    color: #A3A3A3;
+
+    p {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    span {
+        font-size: 32px;
+        line-height: 37px;
+    }
+}
+
+.price2 {
+
+    p {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    span {
+        font-size: 48px;
+        line-height: 55px;
+    }
+}
+
+.card__button {
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.order__title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 100%;
+}
+
+.order__text {
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.sale__content-text {
+    color: #E6E6E6;
+
+    h4 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 100%;
+        color: #E6E6E6;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+        color: #E6E6E6;
+    }
+}
+
+.form__text1 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 41px;
+    color: #E6E6E6;
+}
+
+.form__text2 {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 83px;
+    color: #E6E6E6;
+}
+
+.form__text3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    color: #A3A3A3;
+}
+
+.sale__button {
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.sale__count-lamp {
+
+
+    input {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    button {
+        font-size: 30px;
+        line-height: 34px;
+
+    }
+}
+
+button {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.dark {
+    color: #E6E6E6;
+
+    .card__title {
+        color: #363636;
+    }
+
+    .card__price {
+        color: #363636;
+    }
+
+    .discount__text {
+        color: #E6E6E6;
+    }
+    footer{
+        color: #E6E6E6;
+        a{color: #E6E6E6;}
+    }
+
+}
+
+footer {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 34px;
+    color: #1B1B1B;
+    .footer__link{
+        font-size: 28px;
+    }
+}
