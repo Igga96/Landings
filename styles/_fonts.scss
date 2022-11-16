@@ -148,6 +148,12 @@ body {
     color: #4A3E56;
 }
 
+.reviews__title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 100%;
+}
+
 .suggest__title {
     font-size: 52px;
     line-height: 120%;
@@ -292,9 +298,13 @@ button {
     .discount__text {
         color: #E6E6E6;
     }
-    footer{
+
+    footer {
         color: #E6E6E6;
-        a{color: #E6E6E6;}
+
+        a {
+            color: #E6E6E6;
+        }
     }
 
 }
@@ -306,7 +316,36 @@ footer {
     font-size: 25px;
     line-height: 34px;
     color: #1B1B1B;
-    .footer__link{
+
+    .footer__link {
         font-size: 28px;
+    }
+}
+
+.review__card {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+
+    .review__card-name {
+        font-size: 24px;
+        line-height: 100%;
+    }
+
+    .review__card-date {
+        font-size: 24px;
+        line-height: 100%;
+        color: #B5B5B5;
+    }
+
+    .review__card-place {
+        font-size: 16px;
+        line-height: 100%;
+        color: #B5B5B5;
+    }
+
+    .review__card-stars {
+        font-size: 20px;
+        line-height: 120%;
     }
 }

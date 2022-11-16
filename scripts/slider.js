@@ -1,6 +1,6 @@
 //slider
-const btnLeft = document.querySelector('.button__circle-left')
-const btnRight = document.querySelector('.button__circle-right')
+const btnLeft = document.querySelector('.button__info-left')
+const btnRight = document.querySelector('.button__info-right')
 const slider = document.querySelector('.slider')
 const sliderLine = document.querySelector('.slider__line')
 const images = document.querySelectorAll('.slider__image');
