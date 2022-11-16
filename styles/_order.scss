@@ -1,6 +1,6 @@
 .order {
     .order__content {
-        margin: 121px auto 142px;
+        padding: 121px 0 142px;
 
         .order__title {
             text-align: center;
@@ -8,7 +8,7 @@
         }
 
         .order__items {
-            margin-top: 172px;
+            padding-top: 172px;
             display: flex;
             justify-content: space-around;
             gap: 150px;
@@ -17,7 +17,7 @@
                 text-align: center;
 
                 .order__text {
-                    margin: 38px 0 0;
+                    padding: 38px 0 0;
                 }
             }
         }

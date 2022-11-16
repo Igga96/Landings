@@ -2,15 +2,14 @@
     .container {
         background: url(../pictures/info/bg_l.png), url(../pictures/info/bg_r.png);
         background-repeat: no-repeat, no-repeat;
-        background-size: 23%, 23%;
         background-position: bottom left, right 80%;
     }
 
     .info__content {
-        margin: 0 0 190px;
+        padding: 69px 0 190px;
 
         .info__title {
-            margin: 69px auto;
+            margin: 0 auto;
             max-width: 590px;
         }
 

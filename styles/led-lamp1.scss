@@ -1,5 +1,6 @@
 @import "_fonts.scss";
 @import "_product.scss";
+@import"_benefits.scss";
 @import "_info.scss";
 @import "_video.scss";
 @import "_discount.scss";
@@ -92,20 +93,6 @@ a {
     margin: 0 auto;
     width: 100%;
 }
-
-.product {
-    height: 1518px;
-}
-
-.info {
-    height: 1884px;
-}
-
-.video {
-    height: 1320px;
-}
-
-
 .button__on-off {
     display: inline-flex;
     width: 314px;
@@ -126,6 +113,12 @@ a {
     border-radius: 50%;
     background: #E6E6E6;
     box-shadow: -2px 2px 23px 2px rgba(0, 0, 0, 0.15);
+    &:hover{
+        box-shadow: -2px 4px 32px 4px rgba(0, 0, 0, 0.2);
+    }
+    &:active{
+        background: #c4c4c4;
+    }
 }
 
 button {
@@ -141,7 +134,11 @@ button {
     background: #A41B1B;
     border-radius: 59px;
     &:hover{
-        background: #e45b5b;
+        background: #c04949;
+    }
+    &:active{
+        background: #e46f6f;
+
     }
 }
 
