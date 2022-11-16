@@ -1,0 +1,34 @@
+.benefits {margin: 0;
+    .container {
+        background: url(../pictures/product/pr_bg_l2.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+    }
+
+    .benefits__content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 150px;
+        padding: 79px 0 146px 0;
+        .benefits__item{
+            text-align: center;
+        }
+    }
+}
+
+.image1 {
+    content: url(../pictures/product/pr_ico1.png);
+}
+
+.image2 {
+    content: url(../pictures/product/pr_ico2.png);
+}
+
+.image3 {
+    content: url(../pictures/product/pr_ico3.png);
+}
+
+.image4 {
+    content: url(../pictures/product/pr_ico4.png);
+}

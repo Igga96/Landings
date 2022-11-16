@@ -1,10 +1,16 @@
 .product {
     .container {
-        background: url(../pictures/product/pr_bg_l1.png), url(../pictures/product/pr_bg_l2.png), url(../pictures/product/pr_bg_r.png), url(../pictures/product/mask_group.png);
-        ;
-        background-repeat: no-repeat, no-repeat, no-repeat;
-        background-size: 19%, 19.2%, 51%, 49.5%;
-        background-position: left 62%, left 79.2%, right top, right -110px;
+        background: url(../pictures/product/pr_bg_l1.png), url(../pictures/product/pr_bg_r.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: auto, auto;
+        background-position: left bottom, right top;
+    }
+
+    .container__bg1 {
+        background: url(../pictures/product/mask_group.png);
+        background-position: right 30.5%;
+        background-repeat: no-repeat;
+        background-size: 48.5%;
     }
 
     .product__content {
@@ -80,40 +86,6 @@
             }
         }
     }
-
-    .product__benefits {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 150px;
-        padding: 79px 0 146px 0;
-
-        .benefits {
-            text-align: center;
-
-            .benefits__title {
-                margin: 0;
-                padding: 34px 0 0 0;
-                max-width: 280px;
-            }
-        }
-    }
-}
-
-.image1 {
-    content: url(../pictures/product/pr_ico1.png);
-}
-
-.image2 {
-    content: url(../pictures/product/pr_ico2.png);
-}
-
-.image3 {
-    content: url(../pictures/product/pr_ico3.png);
-}
-
-.image4 {
-    content: url(../pictures/product/pr_ico4.png);
 }
 
 .button__on-off {
@@ -130,12 +102,14 @@
         height: 54px;
         border-radius: 68px;
     }
+
     .button__on {
         width: 50%;
         height: 54px;
         border-radius: 68px;
         background: #E6E6E6;
-        color: #363636;;
+        color: #363636;
+        ;
     }
 
     .button__active {
