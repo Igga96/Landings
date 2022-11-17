@@ -3,26 +3,33 @@
         background: url(../pictures/product/pr_bg_l2.png);
         background-repeat: no-repeat;
         background-position: top left;
-    }
 
-    .benefits__content {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 150px;
-        padding: 79px 0 146px 0;
+        .benefits__content {
+            padding: 79px 0 146px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 150px;
 
-        .benefits__item {
-            .benefits__image {
+            .benefits__item {
                 display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 align-items: center;
-                justify-content: center;
-                height: 81px;
-                width: auto;
-            }
 
-            .benefits__title {
-                text-align: center;
+                .benefits__img {
+                    max-height: 80px;
+                    max-width: 98px;
+                }
+
+                .benefits__text {
+                    margin: 0;
+                    text-align: center;
+                    padding-top: 38px;
+                    font-size: 32px;
+                    line-height: 120%;
+                }
             }
         }
     }
@@ -32,76 +39,106 @@
     .benefits {
         .container {
             background-size: 20%;
-        }
 
-        .benefits__content {
-            gap: 57px;
-            padding: 77px 0 108px 0;
+            .benefits__content {
+                padding: 77px 0 108px;
+                gap: 57px;
 
-            .benefits__item {
-                text-align: center;
+                .benefits__item {
+                    .benefits__img {
 
-                .benefits__image {
-
-                    img {
-                        height: 86%;
+                        img {
+                            max-height: 67px;
+                            max-width: 80px;
+                        }
                     }
-                }
 
-                .benefits__title {
-                    font-size: 25px;
-                    line-height: 120%;
-
+                    .benefits__text {
+                        padding-top: 27px;
+                        font-size: 25px;
+                    }
                 }
             }
         }
     }
+
 }
 
 @media screen and (max-width: 1599px) {
     .benefits {
         .container {
             background-size: 15%;
-        }
 
-        .benefits__content {
-            gap: 35px;
-            padding: 77px 0 74px 0;
+            .benefits__content {
+                padding: 77px 0 74px;
+                gap: 35px;
 
-            .benefits__item {
-                text-align: center;
+                .benefits__item {
+                    .benefits__img {
 
-                .benefits__image {
-
-                    img {
-                        height: 66%;
+                        img {
+                            max-height: 54px;
+                            max-width: 64px;
+                        }
                     }
-                }
 
-                .benefits__title {
-                    font-size: 18px;
-                    line-height: 120%;
+                    .benefits__text {
+                        padding-top: 20px;
+                        font-size: 18px;
+
+                    }
                 }
             }
         }
     }
 }
 
+@media screen and (max-width: 999px) {
+    .benefits {
+        .container {
+            background-size:45%;
+            background-position: -20% 0 ;
 
-@media screen and (max-width: 999px) {}
+            .benefits__content {
+                padding: 29px 0 35px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 28px 0;
+                justify-content: center;
 
-.image1 {
+                .benefits__item {
+                    .benefits__img {
+
+                        img {
+                            max-height: 25px;
+                            max-width: 32px;
+                        }
+                    }
+
+                    .benefits__text {
+                        padding-top: 8px;
+                        font-size: 12px;
+                        margin: 0;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.benefits__img1 {
     content: url(../pictures/product/pr_ico1.png);
 }
 
-.image2 {
+.benefits__img2 {
     content: url(../pictures/product/pr_ico2.png);
 }
 
-.image3 {
+.benefits__img3 {
     content: url(../pictures/product/pr_ico3.png);
 }
 
-.image4 {
+.benefits__img4 {
     content: url(../pictures/product/pr_ico4.png);
 }

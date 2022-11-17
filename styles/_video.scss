@@ -1,15 +1,10 @@
 .video {
-    background: url(../pictures/video/v_bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-
     .container {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-
-
+        background: url(../pictures/video/v_bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+  
         .video__content {
             display: inline-flex;
             align-items: center;
@@ -41,10 +36,6 @@
 
 @media screen and (max-width: 1919px) {
     .video {
-        background: url(../pictures/video/v_bg.png);
-        background-repeat: no-repeat;
-        background-position: center;
-
         .container {
             .video__content {
                 gap: 100px;
@@ -101,6 +92,7 @@
     .video {
 
         .container {
+            background-size: 220%;
             .video__content {
                 gap: 22px;
                 padding: 30px 30px 21px 0;
@@ -116,6 +108,7 @@
 
                 .video__text {
                     order: 1;
+
                     p {
                         width: 267px;
                         font-size: 12px;
