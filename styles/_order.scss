@@ -10,19 +10,121 @@
         .order__items {
             padding-top: 172px;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            flex-wrap: wrap;
             gap: 150px;
 
             .order__item {
                 text-align: center;
 
+
+
                 .order__text {
-                    padding: 38px 0 0;
+                    margin: 0;
+                    padding-top: 38px;
                 }
             }
         }
     }
 }
+
+@media screen and (max-width: 1919px) {
+    .order {
+        .order__content {
+            padding: 121px 0 107px;
+
+            .order__title {
+                font-size: 42px;
+                line-height: 100%;
+            }
+
+            .order__items {
+                padding-top: 119px;
+                gap: 44px;
+
+                .order__item {
+
+                    img {
+                        max-height: 72px;
+                        max-width: 91px;
+                    }
+
+                    .order__text {
+                        padding-top: 32px;
+                        font-size: 25px;
+                        line-height: 120%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1599px) {
+    .order {
+        .order__content {
+            padding: 68px 0 60px;
+
+            .order__title {
+                font-size: 28px;
+            }
+
+            .order__items {
+                padding-top: 82px;
+                gap: 31px;
+
+                .order__item {
+
+                    img {
+                        max-height: 52px;
+                        max-width: 65px;
+                    }
+
+                    .order__text {
+                        padding-top: 20px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .order {
+        .order__content {
+            padding: 41px 0 60px;
+
+            .order__title {
+                font-size: 16px;
+            }
+
+            .order__items {
+                padding-top: 50px;
+
+                .order__item {
+
+                    img {
+                        max-height: 27px;
+                        max-width: 36px;
+                    }
+
+                    .order__text {
+                        padding-top: 5px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
 
 .order__img1 {
     content: url(../pictures/order/o_ico1.png);
@@ -30,12 +132,15 @@
 
 .order__img2 {
     content: url(../pictures/order/o_ico2.png);
+
 }
 
 .order__img3 {
     content: url(../pictures/order/o_ico3.png);
+
 }
 
 .order__img4 {
     content: url(../pictures/order/o_ico4.png);
+
 }

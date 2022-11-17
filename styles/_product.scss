@@ -22,9 +22,6 @@
                 margin: 0;
             }
 
-            .product__button1 {
-                display: none;
-            }
 
             .product__title1 {
                 max-width: 910px;
@@ -75,6 +72,10 @@
             }
         }
     }
+}
+
+.product__hidden {
+    display: none;
 }
 
 .button__on-off {
@@ -310,4 +311,136 @@
 
 }
 
-@media screen and (max-width: 999px) {}
+@media screen and (max-width: 999px) {
+    .product {
+        .container {
+            background: url(../pictures/product/pr_bg-r-mobile.png);
+            background-position: right top;
+            background-repeat:  no-repeat;
+        }
+
+        .container__bg1 {
+            background: none
+        }
+
+        .product__content {
+            display: none;
+
+        }
+
+        .product__hidden {
+            display: block;
+
+            .product__hidden-content {
+               
+                padding-top: 16px;
+                display: flex;
+                flex-direction: column;
+
+                .product__link {
+                    font-size: 14px;
+                    line-height: 16px;
+                    padding-bottom: 10px;
+                }
+
+                .button__on-off {
+
+                    margin: 0;
+                    width: 89px;
+                    height: 23px;
+
+
+                    .button__active {
+                        border-radius: 49px;
+                        width: 70px;
+                        height: 23px;
+                    }
+
+                    .button__of {
+                        width: 50%;
+                        height: 23px;
+                        border-radius: 49px;
+                        font-size: 10px;
+                        line-height: 11px;
+                        text-align: center;
+                    }
+
+                    .button__on {
+                        width: 50%;
+                        height: 23px;
+                        border-radius: 49px;
+                        font-size: 10px;
+                        line-height: 11px;
+                        text-align: center;
+
+                    }
+
+                }
+
+                .product__title1 {
+                    font-size: 28px;
+                    line-height: 32px;
+                    width: 277px;
+                    text-align: center;
+                    margin: 0 auto;
+                    padding-top: 33px;
+                }
+
+                .product__title2 {
+                    font-size: 14px;
+                    line-height: 16px;
+                    position: relative;
+                    left: 167px;
+                    margin: 0;
+
+                }
+
+                .product__hidden-img {
+                    content: url(../pictures/product/pr_bg-mobile.png);
+                }
+
+                .product__hidden-text {
+                    margin: 0;
+                    text-align: center;
+
+                    .product__text1 {
+                        font-size: 16px;
+                        line-height: 100%;
+                        margin: 0;
+                    }
+
+                    .product__text2 {
+                        font-size: 32px;
+                        line-height: 100%;
+                        margin: 0;
+                        padding: 4px 0;
+                    }
+
+                    .product__text3 {
+                        font-size: 18px;
+                        line-height: 100%;
+                        margin: 0;
+                    }
+                }
+
+                .product__button2 {
+                    position: relative;
+                    left: 35px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    padding: 15px 50px;
+                    margin: 21px auto 43px;
+                }
+
+                .product__title3 {
+                    margin: 0 auto;
+                    text-align: center;
+                    font-size: 16px;
+                    line-height: 120%;
+                    width: 218px;
+                }
+
+            }
+        }
+    }
+}

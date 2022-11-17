@@ -228,8 +228,12 @@
             }
         }
 
-        div {text-align: center;
+        div {
+
+
             .button {
+                position: relative;
+                left: 37px;
                 font-size: 14px;
                 line-height: 16px;
                 padding: 15px 50px;
@@ -259,10 +263,12 @@
         }
 
         .review__card-stars {
+
             padding-bottom: 0;
         }
 
         p {
+
             font-size: 10px;
             width: 225px;
         }
