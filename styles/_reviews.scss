@@ -19,7 +19,7 @@
             width: 100%;
             margin: 0 56px;
             overflow: hidden;
- 
+
 
             .reviews__slider-line {
                 max-height: 510px;
@@ -42,24 +42,251 @@
     width: 578px;
     height: 223px;
     margin: 0;
-    padding:36px 54px 42px;
-    .review__card-name{
+    padding: 36px 54px 42px;
+
+    .review__card-name {
+        display: inline-block;
+        width: 170px;
         padding-bottom: 4px;
     }
-    .review__card-date{
-        position: relative;
-        padding-left: 146px;
+
+    .review__card-date {
+        padding-left: 0;
+
     }
-    .review__card-place{
+
+    .review__card-place {
         padding-bottom: 4px;
     }
-    .review__card-stars{
+
+    .review__card-stars {
         padding-bottom: 25px;
     }
+
+    p {
+        font-size: 20px;
+        line-height: 120%;
+    }
 }
-.card__star5{
+
+.card__star5 {
     content: url(../pictures/reviews/5star.png);
+    max-width: 124px;
 }
-.card__star4{
+
+.card__star4 {
     content: url(../pictures/reviews/4star.png);
+    max-width: 124px;
+}
+
+@media screen and (max-width: 1919px) {
+    .reviews__content {
+        padding: 79px 0 83px;
+
+        .reviews__title {
+            font-size: 42px;
+            line-height: 100%;
+        }
+
+        .reviews__slider-cont {
+            padding-top: 47px;
+
+            .reviews__slider {
+                margin: 0 12px;
+
+                .reviews__slider-line {
+                    gap: 63px 50px;
+                }
+            }
+        }
+    }
+
+    .review__card {
+
+        padding: 36px 54px 42px;
+
+        .review__card-name {
+            padding-bottom: 4px;
+        }
+
+        .review__card-place {
+            padding-bottom: 4px;
+        }
+
+        .review__card-stars {
+            padding-bottom: 25px;
+        }
+
+        p {
+            font-size: 20px;
+
+        }
+    }
+
+    .review__button {
+        font-size: 20px;
+        line-height: 23px;
+    }
+}
+
+@media screen and (max-width: 1599px) {
+    .reviews__content {
+        padding: 53px 0 53px;
+
+        .reviews__title {
+            font-size: 28px;
+        }
+
+        .reviews__slider-cont {
+            padding-top: 53px;
+
+            .reviews__slider {
+                height: 353px;
+                margin: 0 30px;
+
+                .reviews__slider-line {
+                    gap: 43px 34px;
+                }
+            }
+        }
+
+        .review__button {
+            font-size: 20px;
+            line-height: 23px;
+            padding: 18px 96px;
+        }
+    }
+
+    .review__card {
+        width: 401px;
+        height: 155px;
+        padding: 25px 38px 31px;
+
+        .review__card-name {
+            width: 150px;
+            padding-bottom: 3px;
+            font-size: 16px;
+            line-height: 100%;
+        }
+
+        .review__card-date {
+            font-size: 16px;
+            line-height: 100%;
+        }
+
+        .review__card-place {
+            padding-bottom: 1px;
+            font-size: 13px;
+            line-height: 100%;
+        }
+
+        .review__card-stars {
+            padding-bottom: 0;
+        }
+
+        p {
+            font-size: 15px;
+            width: 337px;
+        }
+    }
+
+    .card__star5 {
+        content: url(../pictures/reviews/5star.png);
+        max-width: 86px;
+    }
+
+    .card__star4 {
+        content: url(../pictures/reviews/4star.png);
+        max-width: 86px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 999px) {
+    .reviews__content {
+        padding: 24px 0 43px;
+
+        .reviews__title {
+            font-size: 16px;
+        }
+
+        .reviews__slider-cont {
+            padding-top: 41px;
+
+            .reviews__slider {
+                height: 338px;
+                margin: 0;
+
+                .reviews__slider-line {
+                    grid-template-rows: 1fr 1fr 1fr;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 10px;
+                    left: 10px;
+                }
+            }
+        }
+
+        div {text-align: center;
+            .button {
+                font-size: 14px;
+                line-height: 16px;
+                padding: 15px 50px;
+            }
+        }
+    }
+
+    .review__card {
+        width: 274px;
+        height: 106px;
+        padding: 1px 23px 22px;
+
+        .review__card-name {
+            width: 100px;
+            padding-bottom: 2px;
+            font-size: 11px;
+        }
+
+        .review__card-date {
+            font-size: 11px;
+        }
+
+        .review__card-place {
+            padding-bottom: 1px;
+            font-size: 8px;
+
+        }
+
+        .review__card-stars {
+            padding-bottom: 0;
+        }
+
+        p {
+            font-size: 10px;
+            width: 225px;
+        }
+
+    }
+
+    .button__review-right {
+        display: none;
+    }
+
+    .button__review-left {
+        display: none;
+    }
+
+    .card__star5 {
+        content: url(../pictures/reviews/5star.png);
+        max-width: 58px;
+    }
+
+    .card__star4 {
+        content: url(../pictures/reviews/4star.png);
+        max-width: 58px;
+    }
+
+
+
 }

@@ -352,14 +352,59 @@ footer {
 
 
 @media screen and (max-width: 1919px) {
-   
+    .price1 {
+        p {
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        span {
+            font-size: 26px;
+            line-height: 30px;
+        }
+    }
+
+    .price2 {
+        p {
+            font-size: 16px;
+            line-height: 18px;
+
+        }
+
+        span {
+            font-size: 40px;
+            line-height: 46px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 1599px) {
-   
-}
+    .price1 {
+        p {
+            font-size: 12px;
+            line-height: 15px;
+        }
 
-@media screen and (max-width: 999px) {
-    
+        span {
+            font-size: 21px;
+            line-height: 24px;
+
+        }
     }
 
+    .price2 {
+        p {
+            font-size: 12px;
+            line-height: 15px;
+
+        }
+
+        span {
+            font-size: 32px;
+            line-height: 37px;
+        }
+    }
+}
+
+@media screen and (max-width: 999px) {}

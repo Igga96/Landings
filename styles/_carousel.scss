@@ -51,8 +51,13 @@
         background: linear-gradient(228.55deg, #4A3E56 11.03%, #8891BC 84.36%);
         border-radius: 28px;
         cursor: pointer;
+
+        &:hover {
+            background: linear-gradient(211.69deg, #715f83 -37.44%, #a4a9be 83.87%);
+        }
     }
 }
+
 
 
 @media screen and (max-width: 1919px) {
