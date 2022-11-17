@@ -11,11 +11,84 @@
         flex-wrap: wrap;
         gap: 150px;
         padding: 79px 0 146px 0;
-        .benefits__item{
-            text-align: center;
+
+        .benefits__item {
+            .benefits__image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 81px;
+                width: auto;
+            }
+
+            .benefits__title {
+                text-align: center;
+            }
         }
     }
 }
+
+@media screen and (max-width: 1919px) {
+    .benefits {
+        .container {
+            background-size: 20%;
+        }
+
+        .benefits__content {
+            gap: 57px;
+            padding: 77px 0 108px 0;
+
+            .benefits__item {
+                text-align: center;
+
+                .benefits__image {
+
+                    img {
+                        height: 86%;
+                    }
+                }
+
+                .benefits__title {
+                    font-size: 25px;
+                    line-height: 120%;
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1599px) {
+    .benefits {
+        .container {
+            background-size: 15%;
+        }
+
+        .benefits__content {
+            gap: 35px;
+            padding: 77px 0 74px 0;
+
+            .benefits__item {
+                text-align: center;
+
+                .benefits__image {
+
+                    img {
+                        height: 66%;
+                    }
+                }
+
+                .benefits__title {
+                    font-size: 18px;
+                    line-height: 120%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 999px) {}
 
 .image1 {
     content: url(../pictures/product/pr_ico1.png);

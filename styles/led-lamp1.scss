@@ -96,6 +96,69 @@ a {
     width: 100%;
 }
 
+@media screen and (max-width: 1919px) {
+    .container {
+        max-width: 1600px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .wrapper {
+        max-width: 1160px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .dark {
+        .product__text {
+            display: block;
+        }
+    }
+
+    .button__circle {
+        height: 48px;
+        width: 48px;
+    }
+}
+
+@media screen and (max-width: 1599px) {
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .wrapper {
+        max-width: 940px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .dark {
+        .product__text {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .container {
+        max-width: 360px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .wrapper {
+        max-width: 300px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+
+
+
+
 .button__on-off {
     display: inline-flex;
     width: 314px;
@@ -158,6 +221,7 @@ button {
     border-radius: 59px;
 
 }
-.review__button{
+
+.review__button {
     padding: 24px 132px;
 }
