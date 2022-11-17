@@ -1,7 +1,8 @@
 .suggest {
-   .suggest__content{
-    padding: 126px 0 193px;
-   }
+    .suggest__content {
+        padding: 126px 0 193px;
+    }
+
     .suggest__title {
         margin: 0 auto;
         text-align: center;
@@ -35,6 +36,11 @@
                 align-items: center;
                 height: 305px;
                 width: 330px;
+
+                img {
+                    max-width: 330px;
+                    max-height: 305px;
+                }
             }
 
             .card__price {
@@ -68,6 +74,116 @@
         }
     }
 }
+
+@media screen and (max-width: 1919px) {
+    .suggest {
+        .suggest__content {
+            padding: 84px 0 162px;
+        }
+
+        .suggest__title {
+            max-width: 505px;
+            font-size: 42px;
+            line-height: 120%;
+        }
+
+        .suggest__cards {
+            margin-top: 60px;
+            gap: 77px 40px;
+
+            .card {
+                width: 359px;
+                height: 567px;
+
+                .card__title {
+                    margin-top: 38px;
+                    font-size: 26px;
+                    line-height: 120%;
+                }
+
+                .card__img {
+                    max-height: 195px;
+                    width: 236px;
+
+                    img {
+                        max-width: 236px;
+                        max-height: 190px;
+                    }
+                }
+
+                .card__price {
+                    padding: 0 41px;
+                    margin-bottom: 48px;
+                }
+
+                .card__button {
+                    font-size: 22px;
+                    line-height: 25px;
+                    margin-bottom: 39px;
+                    padding: 20px 94px;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 1599px) {
+    .suggest {
+        .suggest__content {
+            padding: 55px 0 125px;
+        }
+
+        .suggest__title {
+            max-width: 291px;
+            font-size: 28px;
+            line-height: 120%;
+        }
+
+        .suggest__cards {
+            margin-top: 32px;
+            gap: 60px 30px;
+
+            .card {
+                width: 293px;
+                height: 459px;
+
+                .card__title {
+                    margin-top: 31px;
+                    font-size: 21.069px;
+                }
+
+                .card__img {
+                    max-height: 158px;
+                    width: 191px;
+
+                    img {
+                        max-width: 190px;
+                        max-height: 158px;
+                    }
+                }
+
+                .card__price {
+                    padding: 0 36px;
+                    margin-bottom: 33px;
+                }
+
+                .card__button {
+                    font-size: 17.8276px;
+                    line-height: 20px;
+
+                    margin-bottom: 31px;
+                    padding: 16px 76px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 999px) {}
+
 
 .card__item1 {
     content: url(../pictures/suggest/c_1.png);

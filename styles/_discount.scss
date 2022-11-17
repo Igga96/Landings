@@ -7,7 +7,7 @@
     .discount__content {
         display: flex;
         justify-content: center;
-        gap: 78px;
+        column-gap: 78px;
         margin-bottom: 137px;
 
         .discount__item {
@@ -40,6 +40,7 @@
                         z-index: 0;
                         margin: 0;
                     }
+
                     .discount__image4 {
                         left: -20%;
                         z-index: 0;
@@ -57,6 +58,96 @@
 
 .discount__image {
     content: url(../pictures/discount/d_ico.png);
-    width: 134px;
+    max-width: 134px;
 
+}
+
+@media screen and (max-width: 1919px) {
+    .discount {
+        .discount__title {
+            margin: 91px auto 82px;
+            font-size: 42px;
+            line-height: 100%;
+        }
+
+        .discount__content {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 66px 181px;
+            margin-bottom: 53px;
+
+            .discount__item {
+                .item__title {
+                    font-size: 30px;
+                    line-height: 100%;
+                }
+
+                .discount__text {
+                    font-size: 26px;
+                    line-height: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1599px) {
+    .discount {
+        .discount__title {
+            margin: 83px auto 69px;
+            font-size: 28px;
+        }
+
+        .discount__content {
+            gap: 47px 131px;
+            margin-bottom: 74px;
+
+            .discount__item {
+                .item__title {
+                    font-size: 24px;
+                }
+
+                .discount__text {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    .discount__image {
+        max-width: 114px;
+
+    }
+}
+
+
+
+@media screen and (max-width: 999px) {
+    .discount {
+        .discount__title {
+            margin: 44px auto 24px;
+            font-size: 16px;
+        }
+
+        .discount__content {
+            gap: 14px;
+            margin-bottom: 55px;
+
+            .discount__item {
+                .item__title {
+                    font-size: 14px;
+                }
+
+                .discount__text {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .discount__image {
+        max-width: 51px;
+
+    }
 }

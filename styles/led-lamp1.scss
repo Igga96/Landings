@@ -219,6 +219,12 @@ button {
 .button__bg-grad {
     background: linear-gradient(211.69deg, #4A3E56 -37.44%, #8891BC 83.87%);
     border-radius: 59px;
+    &:hover{
+        background: linear-gradient(211.69deg, #715f83 -37.44%, #a4a9be 83.87%);
+    }
+    &:active{
+        background: linear-gradient(211.69deg, #88858b -37.44%, #a4a9be 83.87%);
+    }
 
 }
 
