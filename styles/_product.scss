@@ -15,10 +15,9 @@
 
     .product__content {
         display: flex;
+        padding-top: 84px;
 
         .product__content-left {
-            margin-top: 84px;
-
             .product__link {
                 margin: 0;
             }
@@ -28,6 +27,7 @@
             }
 
             .product__title1 {
+                max-width: 910px;
                 padding-top: 261px;
                 margin: 0;
             }
@@ -53,21 +53,10 @@
         .product__content-right {
             display: inline-flex;
 
-            .product__circle {
-                .circle__photo {
-                    position: absolute;
-                    right: 2%;
-                    top: 5%;
-                    transform: rotate(-4.43deg);
-                    width: 43.5%;
-                }
-
-            }
-
             .product__text {
                 position: relative;
                 left: -100px;
-                padding-top: 798px;
+                padding-top: 714px;
                 text-align: center;
 
                 .product__text1 {
@@ -89,7 +78,7 @@
 }
 
 .button__on-off {
-    margin: 940px 20px 0 20px;
+    margin: 886px 20px 0 20px;
     width: 314px;
     height: 54px;
     border: linear-gradient(228.55deg, #4A3E56 11.03%, #8891BC 84.36%);
@@ -109,7 +98,7 @@
         border-radius: 68px;
         background: #E6E6E6;
         color: #363636;
-        ;
+
     }
 
     .button__active {
@@ -122,3 +111,203 @@
         color: #FFFFFF;
     }
 }
+
+@media screen and (max-width: 1919px) {
+    .product {
+        .container {
+            background-size: 20%, 15%;
+        }
+
+        .container__bg1 {
+            background: url(../pictures/product/mask_group.png);
+            background-position: right 3.5%;
+            background-repeat: no-repeat;
+            background-size: 28.5%;
+        }
+
+        .product__content {
+            padding-top: 54px;
+
+            .product__link {
+                font-size: 26px;
+                line-height: 30px;
+            }
+
+            .product__content-left {
+
+                .product__title1 {
+                    max-width: 574px;
+                    padding-top: 204px;
+                    font-size: 58px;
+                    line-height: 67px;
+                }
+
+                .product__title2 {
+                    padding-bottom: 50px;
+                    font-size: 34px;
+                    line-height: 39px;
+                }
+
+                .product__button2 {
+                    padding: 17px 81px;
+                    font-size: 18px;
+                    line-height: 21px;
+
+                }
+
+                .product__title3 {
+                    padding-top: 123px;
+                    max-width: 468px;
+                    padding-bottom: 121px;
+                    font-size: 32px;
+                    line-height: 37px;
+                }
+            }
+
+            .product__content-right {
+
+
+                .product__text {
+                    position: relative;
+                    padding-top: 527px;
+                    left: 0;
+
+                    .product__text1 {
+                        font-size: 24px;
+                        line-height: 28px;
+                        padding-bottom: 5px;
+                    }
+
+                    .product__text2 {
+                        font-size: 50px;
+                        line-height: 57px;
+                    }
+
+                    .product__text3 {
+                        font-size: 22px;
+                        line-height: 25px;
+                    }
+                }
+
+                .button__on-off {
+
+                    margin: 610px 20px 0 77px;
+                    width: 224px;
+                    height: 39px;
+
+                    .button__active {
+                        border-radius: 49px;
+                        width: 124px;
+                        height: 39px;
+                    }
+
+                    .button__of {
+                        width: 50%;
+                        height: 39px;
+                        border-radius: 49px;
+                    }
+
+                    .button__on {
+                        width: 50%;
+                        height: 39px;
+                        border-radius: 49px;
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1599px) {
+    .product {
+        .container {
+            background-size: 15%, 15%;
+        }
+
+        .container__bg1 {
+            background: url(../pictures/product/mask_group.png);
+            background-position: right 3.5%;
+            background-repeat: no-repeat;
+            background-size: 18.5%;
+        }
+
+        .product__content {
+            padding-top: 54px;
+
+            .product__link {
+                font-size: 22px;
+                line-height: 25px;
+            }
+
+            .product__content-left {
+
+                .product__title1 {
+                    max-width: 416px;
+                    padding-top: 127px;
+                    font-size: 42px;
+                    line-height: 48px;
+                }
+
+                .product__title2 {
+                    padding-bottom: 41px;
+                    font-size: 28px;
+                    line-height: 32px;
+                }
+
+                .product__button2 {
+                    padding: 18px 90px;
+                    font-size: 16px;
+                    line-height: 18px;
+
+                }
+
+                .product__title3 {
+                    padding-top: 98px;
+                    max-width: 358px;
+                    padding-bottom: 64px;
+                    font-size: 22px;
+                    line-height: 25px;
+                }
+            }
+
+            .product__content-right {
+
+
+                .product__text {
+                    position: relative;
+                    padding-top: 385px;
+                    left: 0;
+
+                    .product__text1 {
+                        font-size: 16px;
+                        line-height: 18px;
+                        padding-bottom: 5px;
+                    }
+
+                    .product__text2 {
+                        font-size: 42px;
+                        line-height: 48px;
+                    }
+
+                    .product__text3 {
+                        font-size: 20px;
+                        line-height: 23px;
+                    }
+                }
+
+                .button__on-off {
+                    margin: 450px 20px 0 52px;
+                    font-size: 14px;
+                    line-height: 16px;
+
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 999px) {}

@@ -7,6 +7,9 @@
 
     .info__content {
         padding: 69px 0 190px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         .info__title {
             margin: 0 auto;
@@ -14,9 +17,10 @@
         }
 
         .info__photos {
-            display: flex;
-            justify-content: space-between;
             margin-top: 90px;
+            display: flex;
+            justify-content: center;
+
 
             .info__config {
                 display: flex;
@@ -39,6 +43,7 @@
                     }
                 }
             }
+
         }
 
 
@@ -53,9 +58,20 @@
 
                 .description__title {
                     margin: 0 auto;
-                    max-width: 420px;
-                    padding-bottom: 44px;
+                    text-align: center;
+                    max-width: 416px;
+                    padding-bottom: 42px;
+                    font-size: 27px;
+                    line-height: 31px;
                 }
+
+                .description__img {
+                    img {
+                        max-width: 679px;
+                        ;
+                    }
+                }
+
             }
 
             .description__text {
@@ -65,6 +81,207 @@
         }
     }
 }
+
+.hidden__container {
+    display: none;
+
+    .info__hidden {
+        display: flex;
+        justify-content: center;
+        gap: 21px;
+
+
+        .info__hidden-config {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 30px;
+
+            .config__hidden-item {
+                display: flex;
+                align-items: center;
+                background: linear-gradient(228.55deg, #4A3E56 11.03%, #8891BC 84.36%);
+                border-radius: 11px;
+                width: 357px;
+                height: 111px;
+                padding-left: 30px;
+
+                .config__text {
+                    font-size: 24px;
+                    line-height: 120%;
+                }
+
+                div {
+                    height: 48px;
+                    width: 48px;
+                }
+            }
+        }
+    }
+}
+
+
+//*1600-1919px*/
+@media screen and (max-width: 1919px) {
+    .info {
+        .container {
+            background: url(../pictures/info/bg_l.png), url(../pictures/info/bg_r.png);
+            background-repeat: no-repeat, no-repeat;
+            background-position: left bottom, right 80%;
+            background-size: 20%, 17.5%;
+        }
+
+        .info__content {
+            padding: 53px 0 114px;
+
+            .info__title {
+                max-width: 477px;
+                font-size: 40px;
+                line-height: 120%;
+            }
+
+            .info__photos {
+                margin-top: 78px;
+
+                .info__config {
+                    gap: 35px;
+
+                    .config__item {
+                        border-radius: 11px;
+                        width: 357px;
+                        height: 111px;
+                        padding-left: 26px;
+                        font-size: 24px;
+                        line-height: 120%;
+
+                        .config__text {
+                            font-size: 24px;
+                            line-height: 120%;
+                        }
+
+                        div {
+                            height: 48px;
+                            width: 48px;
+                        }
+                    }
+                }
+            }
+
+
+            .info__description {
+                display: flex;
+                justify-content: center;
+                gap: 100px;
+
+
+                .description__image {
+                    padding-top: 114px;
+
+                    .description__title {
+                        max-width: 335px;
+                        padding-bottom: 44px;
+                    }
+
+                    .description__img {
+                        max-width: 547px;
+                    }
+                }
+
+                .description__text {
+                    max-width: 420px;
+                    padding-top: 202px;
+
+                    h4 {
+                        font-size: 26px;
+                        line-height: 120%;
+                        padding-bottom: 10px;
+                    }
+
+                    p {
+                        max-width: 420px;
+                        font-size: 16px;
+                        line-height: 120%;
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1599px) {
+    .info {
+        .container {
+            background: url(../pictures/info/bg_l.png), url(../pictures/info/bg_r.png);
+            background-repeat: no-repeat, no-repeat;
+            background-position: -25% 90%, 115% 90%;
+            background-size: 35%, 25%;
+        }
+        .info__content {
+            padding: 39px 0 65px;
+
+            .info__title {
+                max-width: 333px;
+                font-size: 28px;
+                line-height: 120%;
+            }
+
+            .info__photos {
+                margin-top: 40px;
+
+                .info__config {
+
+                    .config__item {
+                        display: none;
+                    }
+                }
+            }
+
+            .hidden__container {
+                display: block;
+            }
+
+            .info__description {
+                gap: 56px;
+
+                .description__image {
+                    padding-top: 124px;
+
+                    .description__title {
+                        position: relative;
+                        left: 180px;
+                        max-width: 335px;
+                        padding-bottom: 45px;
+                    }
+
+                    .description__img {
+                        max-width: 450px;
+                    }
+                }
+
+                .description__text {
+                    max-width: 304px;
+                    padding-top: 240px;
+
+                    h4 {
+                        font-size: 24px;
+                    }
+
+                    p {
+                        max-width: 304px;
+                        font-size: 14px;
+                        padding-bottom: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 999px) {}
 
 .config__text {
     padding-left: 30px;
@@ -104,4 +321,5 @@
 
 .description__img {
     content: url(../pictures/info/i_d_img.png);
+
 }
