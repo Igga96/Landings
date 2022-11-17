@@ -1650,7 +1650,7 @@ footer .footer__link {
     padding: 84px 0 162px;
   }
   .suggest .suggest__title {
-    max-width: 505px;
+    max-width: 258px;
     font-size: 42px;
     line-height: 120%;
   }
@@ -1663,6 +1663,7 @@ footer .footer__link {
     height: 567px;
   }
   .suggest .suggest__cards .card .card__title {
+    max-width: 257px;
     margin-top: 38px;
     font-size: 26px;
     line-height: 120%;
@@ -1705,6 +1706,7 @@ footer .footer__link {
     height: 459px;
   }
   .suggest .suggest__cards .card .card__title {
+    max-width: 208px;
     margin-top: 31px;
     font-size: 21.069px;
   }
