@@ -13,6 +13,7 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,9 +21,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #E6E6E6;
-
 }
-
+#sale{
+    scroll-behavior: smooth;
+}
 .dark {
     background: #363636;
 
