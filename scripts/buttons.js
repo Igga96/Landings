@@ -18,8 +18,8 @@ btnSale.addEventListener('click', () => {
 
 
 
-const btnAddCount = document.querySelector('.class="button__minus-count')
-const btnRemoveCount = document.querySelector('.class="button__minus-count')
+const btnAddCount = document.querySelector('.button__minus-count')
+const btnRemoveCount = document.querySelector('.button__minus-count')
 const saleFormValue = document.querySelector('sale__count')
 
 btnAddCount.addEventListener('click', function(){

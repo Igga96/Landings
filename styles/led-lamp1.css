@@ -2240,7 +2240,7 @@ footer .footer__link {
   padding-top: 10px;
 }
 
-.sale .container .sale__content .sale__content-lamp form {
+.sale .container .sale__content .sale__content-lamp .sale__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2254,7 +2254,7 @@ footer .footer__link {
   padding-top: 35px;
 }
 
-.sale .container .sale__content .sale__content-lamp form .sale__count-lamp {
+.sale .container .sale__content .sale__content-lamp .sale__form .sale__count-lamp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2262,14 +2262,14 @@ footer .footer__link {
   height: 64px;
 }
 
-.sale .container .sale__content .sale__content-lamp form .sale__count-lamp input {
+.sale .container .sale__content .sale__content-lamp .sale__form .sale__count-lamp input {
   width: 111px;
   height: 63px;
   text-align: center;
   background: #D9D9D9;
 }
 
-.sale .container .sale__content .sale__content-lamp form .sale__count-lamp button {
+.sale .container .sale__content .sale__content-lamp .sale__form .sale__count-lamp button {
   background: #FFFFFF;
   color: #363636;
   width: 52.87px;
