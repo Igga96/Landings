@@ -491,13 +491,12 @@ footer .footer__link {
 
 @media screen and (max-width: 1919px) {
   .product .container {
-    background-size: 20%, 15%;
+    background-size: 20%, 0;
   }
   .product .container__bg1 {
-    background: url(../pictures/product/mask_group.png);
-    background-position: right 3.5%;
+    background: url(../pictures/product/pr_bg-1600.png);
+    background-position: right top;
     background-repeat: no-repeat;
-    background-size: 28.5%;
   }
   .product .product__content {
     padding: 54px 0 121px;
@@ -570,13 +569,13 @@ footer .footer__link {
 
 @media screen and (max-width: 1599px) {
   .product .container {
-    background-size: 15%, 15%;
+    background-size: 15%, 0;
   }
   .product .container__bg1 {
-    background: url(../pictures/product/mask_group.png);
-    background-position: right 3.5%;
+    background: url(../pictures/product/pr_bg-1600.png);
+    background-position: 105% top;
     background-repeat: no-repeat;
-    background-size: 18.5%;
+    background-size: 50%;
   }
   .product .product__content {
     padding: 54px 0 64px;
