@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/led-lamp1.css">
-    <title>Led-Lamp</title>
+    <title>Fonar.shop</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
                         <div class="product__hidden">
                             <div class="product__hidden-content">
                                 <a class="product__link" href="#">fonar.shop</a>
-                                <div class="button__on-off product__button-desktop">
+                                <div class="button__on-off product__button-desktop1">
                                     <button class="button__of button__active">OFF</button>
                                     <button class="button__on">ON</button>
                                 </div>
@@ -57,7 +57,7 @@
                                     <p class="product__text2">49,90 руб</p>
                                     <p class="product__text3">Старая цена 70 руб</p>
                                 </div>
-                                <div class="button__on-off product__button-desktop">
+                                <div class="button__on-off product__button-desktop2">
                                     <button class="button__of button__active">OFF</button>
                                     <button class="button__on">ON</button>
                                 </div>
@@ -564,20 +564,36 @@
                                 <p class="form__text1">ЦЕНА СЕГОДНЯ</p>
                                 <p class="form__text2">49,90 руб</p>
                                 <p class="form__text3">Старая цена 70 руб</p>
-                                <form class="sale__form" action="#" method="get">
+                                <div class="sale__form">
                                     <div class="sale__count-lamp">
-                                        <button>-</button>
-                                        <input type="text" value="1">
-                                        <button>+</button>
+                                        <button class="button__minus-count">-</button>
+                                        <input class="sale__count" type="text" value="1" name="fonar-count">
+                                        <button class="button__plus-count">+</button>
                                     </div>
                                     <button class="button sale__button button__bg-red">ОФОРМИТЬ ЗАКАЗ</button>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <form class="sale__form-hidden" action="#" method="get">
+            <div class="sale__hidden-content">
+                <h2 class="hidden__form-title">ОФОРМИТЬ ЗАКАЗ</h2>
+                <div class="hidden__form-text">
+                    <p>Ваше имя</p>
+                    <input type="text" name="Name" required >
+                    <p>Номер телефона</p>
+                    <input type="tel" name="Phone" placeholder="+375" required>
+                </div>
+                <input type="submit" value="ЗАКАЗАТЬ" class="hidden__button">
+                <a class="hidden__form-link" href="#">
+                    <p>Нажимая на кнопку “Заказать” вы соглашайтесь с политикой конфиденциальности и пользовательским
+                        соглашением</p>
+                </a>
+            </div>
+        </form>
     </main>
     <footer>
         <div class="container">

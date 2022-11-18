@@ -1,0 +1,195 @@
+.sale__form-hidden {
+    display: none;
+    background: #ffff;
+    position: fixed;
+    top: calc(50% - 343px);
+    left: calc(50% - 322px);
+    z-index: 11111;
+    /*background: #E6E6E6;*/
+    max-width: 644px;
+    border-radius: 50px;
+
+    .sale__hidden-content {
+        padding: 84px 84px 38px;
+
+        .hidden__form-title {
+            font-size: 40px;
+            line-height: 46px;
+            color: #363636;
+            margin: 0 auto;
+            text-align: center;
+            padding-bottom: 79px;
+        }
+
+        .hidden__form-text {
+            p {
+                margin: 0;
+                font-size: 24px;
+                line-height: 100%;
+                color: #363636;
+                margin-bottom: 15px;
+            }
+
+            input {
+                margin: 0;
+                width: 476px;
+                height: 56px;
+                font-size: 24px;
+                margin-bottom: 15px;
+                background-color: #ffff;
+            }
+        }
+
+        .hidden__button {
+            position: relative;
+            left: 54px;
+            margin: 48px 0 27px;
+            font-size: 26px;
+            line-height: 30px;
+            padding: 24px 117px;
+            background: linear-gradient(211.69deg, #4A3E56 -37.44%, #8891BC 83.87%);
+            border-radius: 59px;
+            color: #FFFFFF;
+            cursor: pointer;
+            border: none;
+
+            &:hover {
+                background: linear-gradient(211.69deg, #715f83 -37.44%, #a4a9be 83.87%);
+            }
+
+            &:active {
+                background: linear-gradient(211.69deg, #88858b -37.44%, #a4a9be 83.87%);
+            }
+        }
+
+        .hidden__form-link {
+            p {
+                margin: 0;
+                font-size: 15px;
+                line-height: 120%;
+                color: #363636;
+            }
+        }
+
+    }
+}
+
+/*@media screen and (max-width: 1919px) {
+
+}*/
+
+@media screen and (max-width: 1599px) {
+    .sale__form-hidden {
+        position: fixed;
+        top: calc(50% - 250px);
+        left: calc(50% - 250px);
+        z-index: 11111;
+        /*background: #E6E6E6;*/
+        max-width: 500px;
+
+        .sale__hidden-content {
+            padding: 65px 65px 29px;
+
+            .hidden__form-title {
+                font-size: 26px;
+                line-height: 30px;
+                padding-bottom: 70px;
+            }
+
+            .hidden__form-text {
+                p {
+                    font-size: 18px;
+                    line-height: 100%;
+                    margin-bottom: 15px;
+                }
+
+                input {
+                    width: 370px;
+                    height: 44px;
+                    font-size: 18px;
+                    line-height: 100%;
+                    margin-bottom: 15px;
+                }
+            }
+
+            .hidden__button {
+                position: relative;
+                left: 42px;
+                margin: 33px 0 22px;
+                font-size: 20px;
+                line-height: 23px;
+                padding: 18px 90px;
+
+            }
+
+            .hidden__form-link {
+                p {
+                    font-size: 12px;
+                }
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 999px) {
+    .sale__form-hidden {
+        position: fixed;
+        top: calc(50% - 160px);
+        left: calc(50% - 160px);
+        z-index: 11111;
+        /*background: #E6E6E6;*/
+        max-width: 320px;
+
+        .sale__hidden-content {
+            padding: 34px 43px;
+
+            .hidden__form-title {
+                font-size: 16px;
+                line-height: 18px;
+                padding-bottom: 30px;
+            }
+
+            .hidden__form-text {
+                p {
+                    font-size: 10px;
+                    line-height: 100%;
+                    margin-bottom: 6px;
+                }
+
+                input {
+                    width: 242px;
+                    height: 30px;
+                    font-size: 10px;
+                    line-height: 100%;
+                    margin-bottom: 6px;
+                }
+            }
+
+            .hidden__button {
+                position: relative;
+                left: 27px;
+                margin: 6px 0 33px;
+                font-size: 14px;
+                line-height: 16px;
+                padding: 12px 57px;
+
+            }
+
+            .hidden__form-link {
+                p {
+                    font-size: 7px;
+                }
+            }
+
+        }
+    }
+
+}
+
+.noscroll {
+    .sale__form-hidden {
+        display: block;
+    }
+}
