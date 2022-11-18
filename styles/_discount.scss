@@ -1,90 +1,71 @@
 .discount {
-    .discount__title {
-        text-align: center;
-        margin: 131px auto 156px;
-    }
 
     .discount__content {
-        display: flex;
-        justify-content: center;
-        column-gap: 78px;
-        margin-bottom: 137px;
+        padding: 131px 0 156px;
 
-        .discount__item {
-            .discount__card {
-                display: flex;
-                align-items: center;
+        .discount__title {
+            text-align: center;
+            margin: 0;
+            padding-bottom: 156px;
+        }
 
+        .discount__items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 78px;
 
-                .discount__images {
+            .discount__item {
+                .item__title {
+                    margin: 0;
+                    padding-bottom: 40px;
+
+                }
+
+                .discount__card {
                     display: inline-flex;
                     align-items: center;
 
-                    .discount__image {
-                        position: relative;
-                        z-index: 10;
-                    }
-
-                    .discount__image1 {
-                        left: -25%;
-                        z-index: 1;
-                    }
-
-                    .discount__image2 {
-                        left: -12.5%;
-                        z-index: 1;
-                    }
-
-                    .discount__image3 {
-                        left: -25%;
-                        z-index: 0;
-                        margin: 0;
-                    }
-
-                    .discount__image4 {
-                        left: -20%;
-                        z-index: 0;
-                        margin: 0;
-                    }
-
                     .discount__text {
-                        position: relative;
+                        padding-left: 24px;
+                        margin: 0;
+
+
                     }
+
                 }
             }
         }
     }
 }
 
-.discount__image {
-    content: url(../pictures/discount/d_ico.png);
-    max-width: 134px;
-
-}
-
 @media screen and (max-width: 1919px) {
     .discount {
-        .discount__title {
-            margin: 91px auto 82px;
-            font-size: 42px;
-            line-height: 100%;
-        }
-
         .discount__content {
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            gap: 66px 181px;
-            margin-bottom: 53px;
+            padding: 91px 0 53px;
 
-            .discount__item {
-                .item__title {
-                    font-size: 30px;
-                    line-height: 100%;
-                }
+            .discount__title {
+                font-size: 42px;
+                line-height: 100%;
+                padding-bottom: 82px;
+            }
 
-                .discount__text {
-                    font-size: 26px;
-                    line-height: 100%;
+            .discount__items {
+                gap: 66px 181px;
+
+                .discount__item {
+                    .item__title {
+                        font-size: 30px;
+                        line-height: 100%;
+                    }
+
+                    .discount__card {
+
+                        .discount__text {
+                            font-size: 26px;
+                            line-height: 100%;
+                        }
+
+                    }
                 }
             }
         }
@@ -94,60 +75,90 @@
 
 @media screen and (max-width: 1599px) {
     .discount {
-        .discount__title {
-            margin: 83px auto 69px;
-            font-size: 28px;
-        }
-
         .discount__content {
-            gap: 47px 131px;
-            margin-bottom: 74px;
+            padding: 82px 0 74px;
 
-            .discount__item {
-                .item__title {
-                    font-size: 24px;
-                }
+            .discount__title {
+                font-size: 28px;
+                padding-bottom: 69px;
+            }
 
-                .discount__text {
-                    font-size: 22px;
+            .discount__items {
+                gap: 47px 131px;
+
+                .discount__item {
+                    .item__title {
+                        font-size: 24px;
+                        padding-bottom: 30px;
+                    }
+
+                    .discount__card {
+                        .discount__image {
+                            max-height: 114px;
+                        }
+
+                        .discount__text {
+                            padding-left: 26px;
+                            font-size: 22px;
+                        }
+
+                    }
                 }
             }
         }
-    }
-
-    .discount__image {
-        max-width: 114px;
-
     }
 }
 
 
-
 @media screen and (max-width: 999px) {
     .discount {
-        .discount__title {
-            margin: 44px auto 24px;
-            font-size: 16px;
-        }
-
         .discount__content {
-            gap: 14px;
-            margin-bottom: 55px;
+            padding: 44px 0 56px;
 
-            .discount__item {
-                .item__title {
-                    font-size: 14px;
-                }
+            .discount__title {
+                font-size: 16px;
+                padding-bottom: 24px;
+            }
 
-                .discount__text {
-                    font-size: 14px;
+            .discount__items {
+                gap: 14px;
+
+                .discount__item {
+                    .item__title {
+                        font-size: 14px;
+                        padding-bottom: 10px;
+                    }
+
+                    .discount__card {
+                        .discount__image {
+                            max-height: 51px;
+                        }
+
+                        .discount__text {
+                            padding-left: 10px;
+                            font-size: 14px;
+                        }
+
+                    }
                 }
             }
         }
     }
+}
 
-    .discount__image {
-        max-width: 51px;
+.discount__image1 {
+    content: url(../pictures/discount/d_img1.png);
+    height: 134px;
+}
 
-    }
+.discount__image2 {
+    content: url(../pictures/discount//d_img2.png);
+    height: 134px;
+
+}
+
+.discount__image3 {
+    content: url(../pictures/discount//d_img3.png);
+    height: 134px;
+
 }
