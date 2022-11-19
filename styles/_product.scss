@@ -1,4 +1,4 @@
-.product {
+.product { position: relative;
     .container {
         background: url(../pictures/product/pr_bg_l1.png), url(../pictures/product/pr_bg_r.png);
         background-repeat: no-repeat, no-repeat;
@@ -8,10 +8,27 @@
 
     .container__bg1 {
         background: url(../pictures/product/mask_group.png);
-        background-position: right 30.5%;
+        background-position: right 27.5%;
         background-repeat: no-repeat;
         background-size: 48.5%;
     }
+
+    .blur__active {
+        display: none;
+        background: #D9D9D9;
+        mix-blend-mode: overlay;
+        position: absolute;
+        width: 400.84px;
+        height: 1534.36px;
+        left: 460px;
+        top: -55px;
+        filter: blur(40px);
+        transform: rotate(65.56deg);
+
+    }
+
+
+
 
     .product__content {
         display: flex;
@@ -113,16 +130,22 @@
 }
 
 @media screen and (max-width: 1919px) {
+     
     .product {
         .container {
-            background-size: 20%, 15%;
+            background-size: 20%, 0;
         }
 
         .container__bg1 {
-            background: url(../pictures/product/mask_group.png);
-            background-position: right 3.5%;
+            background: url(../pictures/product/pr_bg-1600.png);
+            background-position: right top;
             background-repeat: no-repeat;
-            background-size: 28.5%;
+        }
+        .blur__active {
+            width: 300.84px;
+            height: 1034.36px;
+            left: 470px;
+            top: 44px;
         }
 
         .product__content {
@@ -223,14 +246,20 @@
 @media screen and (max-width: 1599px) {
     .product {
         .container {
-            background-size: 15%, 15%;
+            background-size: 15%, 0;
         }
 
         .container__bg1 {
-            background: url(../pictures/product/mask_group.png);
-            background-position: right 3.5%;
+            background: url(../pictures/product/pr_bg-1600.png);
+            background-position: 105% top;
             background-repeat: no-repeat;
-            background-size: 18.5%;
+            background-size: 50%;
+        }
+        .blur__active {
+            width: 150px;
+            height: 700px;
+            left: 400px;
+            top: 30px;
         }
 
         .product__content {
@@ -295,25 +324,29 @@
                         line-height: 23px;
                     }
                 }
-
+            
                 .button__on-off {
                     margin: 450px 20px 0 52px;
                     font-size: 14px;
                     line-height: 16px;
+                    .button__on{
+                        font-size: 4px;
+                    line-height: 16px;
+                    }
 
                 }
-            }
+            }}
         }
     }
 
-}
+
 
 @media screen and (max-width: 999px) {
     .product {
         .container {
             background: url(../pictures/product/pr_bg-r-mobile.png), url(../pictures/product/pr_bg_l1.png);
             background-position: right top, -20% 100%;
-            background-repeat:  no-repeat, no-repeat;
+            background-repeat: no-repeat, no-repeat;
             background-size: 45%;
         }
 
@@ -330,7 +363,7 @@
             display: block;
 
             .product__hidden-content {
-               
+
                 padding-top: 16px;
                 display: flex;
                 flex-direction: column;

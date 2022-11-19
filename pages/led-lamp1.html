@@ -14,7 +14,7 @@
         <section class="product">
             <div class="container">
                 <div class="container__bg1">
-                    <div class="product__content-blur"></div>
+                    <div class="blur__active"></div>
                     <div class="wrapper">
                         <div class="product__hidden">
                             <div class="product__hidden-content">
@@ -38,9 +38,7 @@
 
                             </div>
                         </div>
-
                         <div class="product__content">
-
                             <div class="product__content-left">
                                 <a class="product__link" href="#">fonar.shop</a>
                                 <h1 class="product__title1">уличный фонарь</h1>
@@ -50,7 +48,6 @@
                                 </a>
                                 <h2 class="product__title3">защити себя от нежелательных гостей</h2>
                             </div>
-
                             <div class="product__content-right">
                                 <div class="product__text">
                                     <p class="product__text1">ЦЕНА СЕГОДНЯ</p>
@@ -64,6 +61,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -172,10 +170,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slider__scroll info__slider">
-                            <div class="slider__thumb">
-                            </div>
+
+
+
+                        <div class="info__scroll">
+                            <label>
+                                <input class="info__slider-scroll" type="range" name="volume" min="0" max="4" value="3"
+                                    step="1">
+                            </label>
                         </div>
+
+
+
                         <div class="hidden__container">
                             <div class="info__hidden">
 
@@ -234,7 +240,6 @@
                 </div>
             </div>
         </section>
-
         <section class="video">
             <div class="container">
                 <div class="wrapper">
@@ -250,7 +255,6 @@
                 </div>
             </div>
         </section>
-
         <section class="discount">
             <div class="container">
                 <div class="wrapper">
@@ -285,7 +289,6 @@
                 </div>
             </div>
         </section>
-
         <section class="reviews">
             <div class="container">
                 <div class="wrapper">
@@ -368,17 +371,15 @@
                                     </div>
                                 </div>
                             </div>
-
-
                             <button class="button__circle button__review-right">
                                 <img class="button__circle-right-img" src="#" alt="ico">
                             </button>
-
                         </div>
 
-                        <div class="slider__scroll reviews__slider-scroll">
-                            <div class="slider__thumb">
-                            </div>
+                        <div class="reviews__scroll">
+                            <label class="reviews__slider-scroll">
+                                <input type="range" name="volume" min="0" max="2" value="1" step="1">
+                            </label>
                         </div>
 
                         <div>
@@ -389,7 +390,6 @@
                 </div>
             </div>
         </section>
-
         <section class="suggest">
             <div class="container">
                 <div class="wrapper">
@@ -413,7 +413,7 @@
                                         <span>40 руб</span>
                                     </div>
                                 </div>
-                                <button class="button card__button button__bg-red">купить</button>
+                                <button class="button button__bg-red card__button">купить</button>
                             </div>
                             <div class="card">
                                 <h3 class="card__title">Уличный фонарь-прожектор</h3>
@@ -567,7 +567,8 @@
                                 <div class="sale__form">
                                     <div class="sale__count-lamp">
                                         <button class="button__minus-count">-</button>
-                                        <input class="sale__count" type="text" value="1" name="fonar-count">
+                                        <input class="sale__count" id="sale__count" type="text" value="1"
+                                            name="fonar-count">
                                         <button class="button__plus-count">+</button>
                                     </div>
                                     <button class="button sale__button button__bg-red">ОФОРМИТЬ ЗАКАЗ</button>
@@ -578,22 +579,6 @@
                 </div>
             </div>
         </section>
-        <form class="sale__form-hidden" action="#" method="get">
-            <div class="sale__hidden-content">
-                <h2 class="hidden__form-title">ОФОРМИТЬ ЗАКАЗ</h2>
-                <div class="hidden__form-text">
-                    <p>Ваше имя</p>
-                    <input type="text" name="Name" required >
-                    <p>Номер телефона</p>
-                    <input type="tel" name="Phone" placeholder="+375" required>
-                </div>
-                <input type="submit" value="ЗАКАЗАТЬ" class="hidden__button">
-                <a class="hidden__form-link" href="#">
-                    <p>Нажимая на кнопку “Заказать” вы соглашайтесь с политикой конфиденциальности и пользовательским
-                        соглашением</p>
-                </a>
-            </div>
-        </form>
     </main>
     <footer>
         <div class="container">
@@ -611,9 +596,59 @@
             </div>
         </div>
     </footer>
+    <div class="overlay">
+    </div>
+    <form class="reviews__form-hidden" id="review__form" action="#" method="get">
+        <div class="reviews__hidden-content">
+            <div class="form__stage1">
+                <h2 class="hidden__form-title">ОСТАВИТЬ ОТЗЫВ</h2>
+                <div class="hidden__form-text">
+                    <p class="hidden__input-text1">Ваше имя</p>
+                    <input class="hidden__input-text2" type="text" name="Name" required maxlength="20">
+                    <p class="hidden__input-text3">Ваш город</p>
+                    <input class="hidden__input-text4" type="text" name="Place" required maxlength="15">
+                    <p class="hidden__input-text5">Вашt сообщение</p>
+                    <input class="hidden__input-text6" type="text" name="review" required maxlength="200">
+                    <div class="review__card-stars">
+                        <img class="card__star5" src="#" alt="ico">
+                    </div>
+                </div>
+                <input type="submit" value="ОТПРАВИТЬ" class="hidden__button">
+            </div>
+
+            <!--  <div class="form__stage2">
+                <h2 class="hidden__form-title">CПАСИБО ЗА ОТЗЫВ</h2>
+                <img class="hidden__form-img" src="#" alt="ico">
+            </div>-->
+        </div>
+
+    </form>
+    <form class="sale__form-hidden" id="sale__form" action="#" method="get">
+        <div class="sale__hidden-content">
+            <div class="form__stage1">
+                <h2 class="hidden__form-title">ОФОРМИТЬ ЗАКАЗ</h2>
+                <div class="hidden__form-text">
+                    <p>Ваше имя</p>
+                    <input type="text" name="Name" required maxlength="20">
+                    <p>Номер телефона</p>
+                    <input type="tel" name="Phone" placeholder="+375" required maxlength="15">
+                </div>
+                <input type="submit" value="ЗАКАЗАТЬ" class="hidden__button sale__hidden-btn">
+                <a class="hidden__form-link" href="#">
+                    <p>Нажимая на кнопку “Заказать” вы соглашайтесь с политикой конфиденциальности и пользовательским
+                        соглашением</p>
+                </a>
+            </div>
+            <!---  <div class="form__stage2">
+                <h2 class="hidden__form-title">CПАСИБО ЗА ЗАКАЗ</h2>
+                <img class="hidden__form-img" src="#" alt="ico">
+            </div>
+        -->
+    </form>
     <script src="../scripts/buttons.js"></script>
     <script src="../scripts/slider.js"></script>
     <script src="../scripts/anchor-scroll.js"></script>
+    <script src="../scripts/forms.js"></script>
 </body>
 
 </html>
