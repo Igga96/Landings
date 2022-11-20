@@ -118,10 +118,6 @@ a {
         }
     }
 
-    .button__circle {
-        height: 48px;
-        width: 48px;
-    }
 }
 
 @media screen and (max-width: 1599px) {
@@ -157,34 +153,8 @@ a {
         width: 100%;
     }
 }
+//////////////////////////////////////////////////////////
 
-.button__circle {
-    height: 64px;
-    width: 64px;
-    border: #E6E6E6;
-    border-radius: 50%;
-    background: #E6E6E6;
-    box-shadow: -2px 2px 23px 2px rgba(0, 0, 0, 0.15);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &:hover {
-        box-shadow: -2px 4px 32px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    &:active {
-        background: #c4c4c4;
-    }
-}
-
-.button__circle-left-img {
-    content: url(../pictures/info/btn_l.png);
-}
-
-.button__circle-right-img {
-    content: url(../pictures/info/btn_r.png);
-}
 
 button {
     color: #FFFFFF;
