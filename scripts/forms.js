@@ -4,17 +4,28 @@ const btnSale = document.querySelector('.sale__button')
 const saleForm = document.querySelector('.sale__form-hidden')
 const reviewForm = document.querySelector('.reviews__form-hidden')
 const overlay = document.querySelector('.overlay')
-const btnCards = document.querySelectorAll('.card__button')
+const btnsCard = document.querySelectorAll('.card__button')
+const btnsFormClose = document.querySelectorAll('.form__close')
 
 btnReview.addEventListener('click', () => {
     openReviewPopup()
 })
-for(const btnCard of btnCards){
+
+for(const btnFormClose of btnsFormClose){
+    btnFormClose.addEventListener('click', ()=>{
+        closePopup()
+    })
+}
+
+
+
+for(const btnCard of btnsCard){
     btnCard.addEventListener('click', function(){
 openSalePopup()
     })
 
 }
+
 
 btnSale.addEventListener('click', () => {
     openSalePopup()

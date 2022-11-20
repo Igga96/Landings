@@ -1,13 +1,25 @@
 //product section
-const btnDark = document.querySelector('.product__button-desktop2');
-const btnOn = document.querySelector('.button__on')
-const btnOff = document.querySelector('.button__off')
-
+const btnsDark = document.querySelectorAll('.button__dark-desk');
+const textOn = document.querySelector('.text__on');
+const textOff = document.querySelector('.text__off');
+const textOnHidden = document.querySelector('.text__on-hidden');
+const textOffHidden = document.querySelector('.text__off-hidden');
 const myBody = document.body
 //add class 'dark' to body
-btnDark.addEventListener('click', () => {
+
+for (const btnDark of btnsDark) {
+    btnDark.addEventListener('click', () => {
+        darkBg()
+    })
+}
+
+function darkBg() {
     myBody.classList.toggle('dark')
-})
+    textOff.classList.toggle('text__button-active')
+    textOn.classList.toggle('text__button-active')
+    textOffHidden.classList.toggle('text__button-active')
+    textOnHidden.classList.toggle('text__button-active')
+}
 
 
 

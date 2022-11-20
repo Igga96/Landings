@@ -14,15 +14,20 @@
         <section class="product">
             <div class="container">
                 <div class="container__bg1">
-                    <div class="blur__active"></div>
+
                     <div class="wrapper">
+                        <div class="blur__active"></div>
                         <div class="product__hidden">
                             <div class="product__hidden-content">
                                 <a class="product__link" href="#">fonar.shop</a>
-                                <div class="button__on-off product__button-desktop1">
-                                    <button class="button__of button__active">OFF</button>
-                                    <button class="button__on">ON</button>
-                                </div>
+
+                                <label class="button__dark button__dark-hidden">
+                                    <input type="checkbox" class="button__dark-desk">
+                                    <span class="on-off">
+                                        <p class="text__off-hidden text__button-active">OFF</p>
+                                        <p class="text__on-hidden">ON</p>
+                                    </span>
+                                </label>
                                 <h1 class="product__title1">уличный фонарь</h1>
                                 <h2 class="product__title2">в виде камеры</h2>
                                 <img class="product__hidden-img" src="#" alt="">
@@ -54,14 +59,18 @@
                                     <p class="product__text2">49,90 руб</p>
                                     <p class="product__text3">Старая цена 70 руб</p>
                                 </div>
-                                <div class="button__on-off product__button-desktop2">
-                                    <button class="button__of button__active">OFF</button>
-                                    <button class="button__on">ON</button>
-                                </div>
+
+                                <label class="button__dark">
+                                    <input type="checkbox" class="button__dark-desk">
+                                    <span class="on-off">
+                                        <p class="text__off text__button-active">OFF</p>
+                                        <p class="text__on">ON</p>
+                                    </span>
+                                </label>
+
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -103,32 +112,25 @@
                 <div class="wrapper">
                     <div class="info__content">
                         <h2 class="info__title">Посмотрите реальные фото товара</h2>
-
                         <div class="info__photos">
-
                             <div class="info__config config1">
-
                                 <div class="config__item">
                                     <div class="item1"></div>
                                     <p class="config__text">Использование при любой погоде</p>
                                 </div>
-
                                 <div class="config__item">
                                     <div class="item2"></div>
                                     <p class="config__text">Датчик света и движение</p>
                                 </div>
-
                                 <div class="config__item">
                                     <div class="item3"></div>
                                     <p class="config__text">Встроенная <br> солнечная батарея</p>
                                 </div>
                             </div>
-
                             <div class="info__cont">
                                 <button class="button__circle button__info-left ">
                                     <img class="button__circle-left-img" src="#" alt="ico">
                                 </button>
-
                                 <div class="slider">
                                     <div class="slider__line">
                                         <div class="slider__image">
@@ -147,14 +149,11 @@
                                             <img class="slider__image5" src="#" alt="image">
                                         </div>
                                     </div>
-
                                 </div>
-
                                 <button class="button__circle button__info-right">
                                     <img class="button__circle-right-img" src="#" alt="ico">
                                 </button>
                             </div>
-
                             <div class="info__config config2">
                                 <div class="config__item">
                                     <div class="item4"></div>
@@ -170,18 +169,12 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                         <div class="info__scroll">
                             <label>
-                                <input class="info__slider-scroll" type="range" name="volume" min="0" max="4" value="3"
+                                <input class="info__slider-scroll" type="range" name="volume" min="0" max="4" value="0"
                                     step="1">
                             </label>
                         </div>
-
-
-
                         <div class="hidden__container">
                             <div class="info__hidden">
 
@@ -191,12 +184,10 @@
                                         <div class="item1"></div>
                                         <p class="config__text">Использование при любой погоде</p>
                                     </div>
-
                                     <div class="config__hidden-item">
                                         <div class="item2"></div>
                                         <p class="config__text">Датчик света и движение</p>
                                     </div>
-
                                     <div class="config__hidden-item">
                                         <div class="item3"></div>
                                         <p class="config__text">Встроенная <br> солнечная батарея</p>
@@ -234,7 +225,6 @@
                                 <p>Свет горит на 30% в темное время суток, вне зависимости от движения, и тухнет
                                     в дневное время</p>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -245,7 +235,7 @@
                 <div class="wrapper">
                     <div class="video__content">
                         <div class="video__frame">
-                            <iframe src=""></iframe>
+                            <iframe width="810px" height="810px" src="../pictures/video/27.mp4"  frameborder="" ></iframe>
                         </div>
                         <div class="video__text">
                             <p> Видеообзор посылки из нашего магазина.
@@ -580,6 +570,7 @@
             </div>
         </section>
     </main>
+
     <footer>
         <div class="container">
             <div class="wrapper">
@@ -601,6 +592,9 @@
     <form class="reviews__form-hidden" id="review__form" action="#" method="get">
         <div class="reviews__hidden-content">
             <div class="form__stage1">
+                <button class="form__close">
+                    <img class="close__img" src="#" alt="#">
+                </button>
                 <h2 class="hidden__form-title">ОСТАВИТЬ ОТЗЫВ</h2>
                 <div class="hidden__form-text">
                     <p class="hidden__input-text1">Ваше имя</p>
@@ -626,6 +620,9 @@
     <form class="sale__form-hidden" id="sale__form" action="#" method="get">
         <div class="sale__hidden-content">
             <div class="form__stage1">
+                <button class="form__close">
+                    <img class="close__img" src="#" alt="#">
+                </button>
                 <h2 class="hidden__form-title">ОФОРМИТЬ ЗАКАЗ</h2>
                 <div class="hidden__form-text">
                     <p>Ваше имя</p>
@@ -649,6 +646,7 @@
     <script src="../scripts/slider.js"></script>
     <script src="../scripts/anchor-scroll.js"></script>
     <script src="../scripts/forms.js"></script>
+   
 </body>
 
 </html>

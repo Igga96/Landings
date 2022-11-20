@@ -1,4 +1,6 @@
-.product { position: relative;
+.product {
+    position: relative;
+
     .container {
         background: url(../pictures/product/pr_bg_l1.png), url(../pictures/product/pr_bg_r.png);
         background-repeat: no-repeat, no-repeat;
@@ -94,43 +96,73 @@
     display: none;
 }
 
-.button__on-off {
+.button__dark {
     margin: 886px 20px 0 20px;
+    background: #E6E6E6;
+    position: relative;
+    display: inline-block;
     width: 314px;
     height: 54px;
-    border: linear-gradient(228.55deg, #4A3E56 11.03%, #8891BC 84.36%);
+    border: 1px solid #4A3E56;
     border-radius: 68px;
-    text-align: center;
-    background: #E6E6E6;
 
-    .button__of {
-        width: 50%;
-        height: 54px;
-        border-radius: 68px;
+    /*изменение цвета фона после переключения кнопки в режим ON*/
+    input {
+        display: none;
+
+        &:checked+.on-off {
+            background-color: #E6E6E6;
+        }
+
+        &:checked+.on-off:before {
+            transform: translateX(142px);
+        }
     }
 
-    .button__on {
-        width: 50%;
-        height: 54px;
-        border-radius: 68px;
-        background: #E6E6E6;
-        color: #363636;
 
-    }
-
-    .button__active {
-        position: relative;
-        background: linear-gradient(228.55deg, #4A3E56 11.03%, #8891BC 84.36%);
+    .on-off {
+        display: flex;
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /*цвет фона в режиме off*/
+        background-color: #E6E6E6;
+        transition: 800ms ease;
         border-radius: 68px;
-        width: 174px;
-        height: 54px;
-        z-index: 1;
-        color: #FFFFFF;
+
+        &:before {
+            position: absolute;
+            left: -1px;
+            width: 55%;
+            height: 100%;
+            background: linear-gradient(228.55deg, #4A3E56 11.03%, #8891BC 84.36%);
+            transition: 800ms ease;
+            /*border style slider*/
+            border-radius: 68px;
+            content: "";
+        }
+
+        .text__off,
+        .text__on {
+            position: relative;
+            margin: 5% 19%;
+            color: #363636;
+            font-size: 20px;
+            line-height: 23px;
+        }
+
+        .text__button-active {
+            color: #E6E6E6;
+        }
     }
 }
 
+
 @media screen and (max-width: 1919px) {
-     
+
     .product {
         .container {
             background-size: 20%, 0;
@@ -141,6 +173,7 @@
             background-position: right top;
             background-repeat: no-repeat;
         }
+
         .blur__active {
             width: 300.84px;
             height: 1034.36px;
@@ -211,32 +244,38 @@
                     }
                 }
 
-                .button__on-off {
 
+                .button__dark {
                     margin: 610px 20px 0 77px;
                     width: 224px;
                     height: 39px;
+                    border-radius: 48px;
 
-                    .button__active {
-                        border-radius: 49px;
-                        width: 124px;
-                        height: 39px;
+                    input {
+
+                        &:checked+.on-off:before {
+                            transform: translateX(102px);
+                        }
                     }
 
-                    .button__of {
-                        width: 50%;
-                        height: 39px;
-                        border-radius: 49px;
+                    .on-off {
+                        border-radius: 48px;
+
+                        &:before {
+                            border-radius: 48px;
+
+                        }
+
+                        .text__off,
+                        .text__on {
+                            margin: 4% 19%;
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+
                     }
-
-                    .button__on {
-                        width: 50%;
-                        height: 39px;
-                        border-radius: 49px;
-
-                    }
-
                 }
+
             }
         }
     }
@@ -255,6 +294,7 @@
             background-repeat: no-repeat;
             background-size: 50%;
         }
+
         .blur__active {
             width: 150px;
             height: 700px;
@@ -324,20 +364,12 @@
                         line-height: 23px;
                     }
                 }
-            
-                .button__on-off {
-                    margin: 450px 20px 0 52px;
-                    font-size: 14px;
-                    line-height: 16px;
-                    .button__on{
-                        font-size: 4px;
-                    line-height: 16px;
-                    }
 
-                }
-            }}
+            }
         }
     }
+}
+
 
 
 
@@ -351,7 +383,19 @@
         }
 
         .container__bg1 {
-            background: none
+            background: none;
+        }
+
+        .blur__active {
+            background: url(../pictures/product/pr_bg-mob.png);
+            background-repeat: no-repeat;
+            filter: blur(1.5px);
+            background-size: 120%;
+            width: 175px;
+            height: 265px;
+            left: -2px;
+            top: 206px;
+            transform: rotate(-3deg);
         }
 
         .product__content {
@@ -374,39 +418,47 @@
                     padding-bottom: 10px;
                 }
 
-                .button__on-off {
 
+
+                .button__dark-hidden {
+                    border: 1px solid #4A3E56;
                     margin: 0;
+                    top: -1px;
                     width: 89px;
                     height: 23px;
+                    border-radius: 68px;
 
+                    input {
 
-                    .button__active {
-                        border-radius: 49px;
-                        width: 70px;
-                        height: 23px;
+                        &:checked+.on-off:before {
+                            transform: translateX(42px);
+                        }
                     }
 
-                    .button__of {
-                        width: 50%;
-                        height: 23px;
-                        border-radius: 49px;
-                        font-size: 10px;
-                        line-height: 11px;
-                        text-align: center;
+
+                    .on-off {
+                        border-radius: 68px;
+
+                        &:before {
+                            border-radius: 68px;
+                        }
+
+                        .text__off-hidden,
+                        .text__on-hidden {
+                            position: relative;
+                            margin: 5% 15%;
+                            color: #363636;
+                            font-size: 10px;
+                            line-height: 11px;
+                        }
+
+                        .text__button-active {
+                            color: #E6E6E6;
+                        }
+
                     }
-
-                    .button__on {
-                        width: 50%;
-                        height: 23px;
-                        border-radius: 49px;
-                        font-size: 10px;
-                        line-height: 11px;
-                        text-align: center;
-
-                    }
-
                 }
+
 
                 .product__title1 {
                     font-size: 28px;
