@@ -97,7 +97,7 @@
 }
 
 .button__dark {
-    margin: 886px 20px 0 20px;
+    margin: 886px 20px 0 50px;
     background: #E6E6E6;
     position: relative;
     display: inline-block;
@@ -135,7 +135,7 @@
 
         &:before {
             position: absolute;
-            left: -1px;
+            left: 0;
             width: 55%;
             height: 100%;
             background: linear-gradient(228.55deg, #4A3E56 11.03%, #8891BC 84.36%);
@@ -148,8 +148,9 @@
         .text__off,
         .text__on {
             position: relative;
-            margin: 5% 19%;
+            margin: 4.5% 19%;
             color: #363636;
+            font-weight: 700;
             font-size: 20px;
             line-height: 23px;
         }
@@ -224,7 +225,7 @@
 
                 .product__text {
                     position: relative;
-                    padding-top: 527px;
+                    padding-top: 515px;
                     left: 0;
 
                     .product__text1 {
@@ -268,7 +269,7 @@
 
                         .text__off,
                         .text__on {
-                            margin: 4% 19%;
+                            margin: 5% 19%;
                             font-size: 14px;
                             line-height: 16px;
                         }
@@ -290,9 +291,9 @@
 
         .container__bg1 {
             background: url(../pictures/product/pr_bg-1600.png);
-            background-position: 105% top;
+            background-position: 110% top;
             background-repeat: no-repeat;
-            background-size: 50%;
+            background-size: 54%;
         }
 
         .blur__active {
@@ -345,7 +346,7 @@
 
                 .product__text {
                     position: relative;
-                    padding-top: 385px;
+                    padding-top: 378px;
                     left: 0;
 
                     .product__text1 {
@@ -355,6 +356,7 @@
                     }
 
                     .product__text2 {
+                        padding-bottom: 3px;
                         font-size: 42px;
                         line-height: 48px;
                     }
@@ -365,10 +367,52 @@
                     }
                 }
 
+                .button__dark {
+                    margin: 442px 20px 0 50px;
+                    width: 181px;
+                    height: 32px;
+                    border-radius: 49px;
+
+                    /*изменение цвета фона после переключения кнопки в режим ON*/
+                    input {
+                        display: none;
+
+                        &:checked+.on-off {
+                            background-color: #E6E6E6;
+                        }
+
+                        &:checked+.on-off:before {
+                            transform: translateX(82px);
+                        }
+                    }
+
+
+                    .on-off {
+
+                        border-radius: 49px;
+
+                        &:before {
+                            left: 0;
+                            width: 55%;
+                            height: 100%;
+                            border-radius: 49px;
+                        }
+
+                        .text__off,
+                        .text__on {
+                            margin: 5% 19%;
+                            font-size: 12px;
+                            line-height: 14px;
+                        }
+
+                    }
+                }
+
             }
         }
     }
 }
+
 
 
 
@@ -423,7 +467,7 @@
                 .button__dark-hidden {
                     border: 1px solid #4A3E56;
                     margin: 0;
-                    top: -1px;
+                    top: 0;
                     width: 89px;
                     height: 23px;
                     border-radius: 68px;
@@ -431,7 +475,7 @@
                     input {
 
                         &:checked+.on-off:before {
-                            transform: translateX(42px);
+                            transform: translateX(40px);
                         }
                     }
 
@@ -446,10 +490,11 @@
                         .text__off-hidden,
                         .text__on-hidden {
                             position: relative;
-                            margin: 5% 15%;
+                            margin: 5.5% 14.5%;
                             color: #363636;
                             font-size: 10px;
                             line-height: 11px;
+                            font-weight: 700;
                         }
 
                         .text__button-active {

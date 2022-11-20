@@ -1,7 +1,7 @@
 .overlay {
     display: none;
     position: fixed;
-    top: 0;
+    top: 0; 
     height: 100vh;
     width: 100vw;
     z-index: 9000;
@@ -101,9 +101,12 @@
     }
 }
 
+.form__stage1 {}
 
 .form__stage2 {
+    position: relative;
     display: none;
+    text-align: center;
 }
 
 .hidden__form-img {
@@ -111,8 +114,8 @@
     transform: rotate(20deg);
     max-height: 200px;
     margin-bottom: 50px;
-    position: relative;
-    left: 130px;
+
+
 }
 
 .form__close {
@@ -283,6 +286,7 @@
         margin-bottom: 30px;
         left: 70px;
     }
+
     .form__close {
         .close__img {
             max-width: 20px;

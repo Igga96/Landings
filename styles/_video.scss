@@ -4,7 +4,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
-  
+
         .video__content {
             display: inline-flex;
             align-items: center;
@@ -14,10 +14,10 @@
             .video__frame {
                 width: 812.54px;
                 height: 799px;
-
-                iframe {
-                    width: 810px;
-                    height: 810px;
+                video {
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
                 }
             }
 
@@ -90,6 +90,7 @@
 
         .container {
             background-size: 220%;
+
             .video__content {
                 gap: 22px;
                 padding: 30px 30px 21px 0;

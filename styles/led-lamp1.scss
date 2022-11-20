@@ -34,16 +34,19 @@ body {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 .dark {
-    .blur__active{display: block  }
+    .blur__active {
+        display: block
+    }
+
     background: #363636;
-    
+
 
     .product__text {
         display: none;
     }
 
     .button__dark {
-        margin-left: 344px;
+        margin-left: 373px;
     }
 
     .review__card {
@@ -147,7 +150,7 @@ a {
         margin: 0 auto;
         width: 100%;
     }
-    
+
     .wrapper {
         max-width: 300px;
         margin: 0 auto;
@@ -162,6 +165,9 @@ a {
     border-radius: 50%;
     background: #E6E6E6;
     box-shadow: -2px 2px 23px 2px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover {
         box-shadow: -2px 4px 32px 4px rgba(0, 0, 0, 0.2);
@@ -170,6 +176,14 @@ a {
     &:active {
         background: #c4c4c4;
     }
+}
+
+.button__circle-left-img {
+    content: url(../pictures/info/btn_l.png);
+}
+
+.button__circle-right-img {
+    content: url(../pictures/info/btn_r.png);
 }
 
 button {
@@ -213,15 +227,3 @@ button {
 .review__button {
     padding: 24px 132px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
