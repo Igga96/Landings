@@ -32,7 +32,9 @@
         }
     }
 }
-
+.info__slider-scroll{
+    position: relative;
+}
 .info__scroll {
     text-align: center;
     margin: 110px auto 90px;
@@ -40,6 +42,9 @@
 .reviews__scroll {
     text-align: center;
     margin: 75px auto 131px;
+}
+.reviews__slider-scroll{
+    position: relative;
 }
 
 input[type=range] {
