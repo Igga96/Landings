@@ -7,6 +7,18 @@ const overlay = document.querySelector('.overlay')
 const btnsCard = document.querySelectorAll('.card__button')
 const btnsFormClose = document.querySelectorAll('.form__close')
 
+
+/*////////////////////////////////////////////////////////////////*
+константа кнопки в форме -событе-
+    func(){блокформы.style.display = 'none';
+    блокновой формы.style.display = 'block'}
+    setTimeout(func, 3000 )
+}
+
+
+
+
+*///////////////////
 btnReview.addEventListener('click', () => {
     openReviewPopup()
 })
