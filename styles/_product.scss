@@ -305,10 +305,10 @@
 @media screen and (max-width: 1599px) {
     .product {
         .container {
-            background-size: 20%, 0;
+            background-size: 15%, 0;
 
             .bg__active {
-                background: url(../pictures/product/pr_bg-light1600-1000.png), url(../pictures/product/pr_bg-1600.png);
+                background: url(../pictures/product/pr_bg-light1600-1000.png), url(../pictures/product/pr_bg-1600.png), ;
 
                 background-position: left 60%, 110% top;
                 background-repeat: no-repeat, no-repeat;

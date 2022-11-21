@@ -645,7 +645,7 @@ footer .footer__link {
 
 @media screen and (max-width: 1599px) {
   .product .container {
-    background-size: 20%, 0;
+    background-size: 15%, 0;
   }
   .product .container .bg__active {
     background: url(../pictures/product/pr_bg-light1600-1000.png), url(../pictures/product/pr_bg-1600.png);
@@ -1895,12 +1895,6 @@ footer .footer__link {
   .review__card p {
     font-size: 10px;
     width: 225px;
-  }
-  .button__review-right {
-    display: none;
-  }
-  .button__review-left {
-    display: none;
   }
   .card__star5 {
     content: url(../pictures/reviews/5star.png);
