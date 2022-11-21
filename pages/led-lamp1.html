@@ -236,7 +236,8 @@
                     <div class="video__content">
                         <div class="video__frame">
                             <video class="" controls="controls" width="100%" poster="../pictures/video/v_frame.png">
-                                <source src="../pictures/video/27.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                                <source src="../pictures/video/27.mp4"
+                                    type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                             </video>
                         </div>
                         <div class="video__text">
@@ -577,7 +578,7 @@
         <div class="container">
             <div class="wrapper">
                 <div class="footer__content">
-                    <a class="footer__link1" type="e.mail" href="">sfotkal@gmail.com</a>
+                    <a class="footer__link1" type="e.mail" href="#">sfotkal@gmail.com</a>
                     <p>Минск, Гурского 33, 11 ИП Будилович Д.В. 690865072<br>
                         УНП 690865072 Р/с BY52ALFA30132478910010270000 в ЗАО “Альфа-Банк” код банка ALFABY2X
                     </p>
@@ -591,34 +592,46 @@
     </footer>
     <div class="overlay">
     </div>
+
+    <div class="form__reviews-stage2">
+        <div class="stage2__content">
+            <h2 class="hidden__form-title">CПАСИБО ЗА ОТЗЫВ</h2>
+            <img class="hidden__form-img" src="#" alt="ico">
+        </div>
+
+    </div>
+    <div class="form__sale-stage2">
+        <div class="stage2__content">
+            <h2 class="hidden__form-title1">СПАСИБО!</h2>
+            <h2 class="hidden__form-title2">Ваша заявка принята</h2>
+            <p class="hidden__form-title3">В ближайшее время мы отправим все материалы на указанную Вами почту</p>
+            <img class="hidden__form-img" src="#" alt="ico">
+        </div>
+    </div>
+
     <form class="reviews__form-hidden" id="review__form" action="#" method="get">
         <div class="reviews__hidden-content">
-            <div class="form__stage1">
+            <div class="form__reviews-stage1">
                 <button class="form__close">
                     <img class="close__img" src="#" alt="#">
                 </button>
                 <h2 class="hidden__form-title">ОСТАВИТЬ ОТЗЫВ</h2>
                 <div class="hidden__form-text">
-                    <p class="hidden__input-text1">Ваше имя</p>
-                    <input class="hidden__input-text2" type="text" name="Name" required maxlength="20">
-                    <p class="hidden__input-text3">Ваш город</p>
-                    <input class="hidden__input-text4" type="text" name="Place" required maxlength="15">
-                    <p class="hidden__input-text5">Вашt сообщение</p>
-                    <input class="hidden__input-text6" type="text" name="review" required maxlength="200">
+                    <p>Ваше имя</p>
+                    <input class="hidden__input-text" type="text" name="Name" required maxlength="20">
+                    <p>Ваш город</p>
+                    <input class="hidden__input-text" type="text" name="Place" required maxlength="15">
+                    <p>Вашe сообщение</p>
+                    <input class="hidden__input-text" type="text" name="review" required maxlength="200">
                     <div class="review__card-stars">
                         <img class="card__star5" src="#" alt="ico">
                     </div>
                 </div>
-                <input type="submit" value="ОТПРАВИТЬ" class="hidden__button">
-            </div>
-
-            <div class="form__stage2">
-                <h2 class="hidden__form-title">CПАСИБО ЗА ОТЗЫВ</h2>
-                <img class="hidden__form-img" src="#" alt="ico">
+                <input type="submit" value="ОТПРАВИТЬ" class="hidden__button hidden__revviews-button">
             </div>
         </div>
-
     </form>
+
     <form class="sale__form-hidden" id="sale__form" action="#" method="get">
         <div class="sale__hidden-content">
             <div class="form__stage1">
@@ -638,12 +651,8 @@
                         соглашением</p>
                 </a>
             </div>
-            <div class="form__stage2">
-                <h2 class="hidden__form-title">CПАСИБО ЗА ЗАКАЗ</h2>
-                <img class="hidden__form-img" src="#" alt="ico">
-            </div>
-
     </form>
+
     <script src="../scripts/buttons.js"></script>
     <script src="../scripts/slider.js"></script>
     <script src="../scripts/anchor-scroll.js"></script>
