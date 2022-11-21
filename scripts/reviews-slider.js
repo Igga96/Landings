@@ -56,6 +56,9 @@ function rollSliders() {
     scroll.value = countR
     scroll.style.transition = '1000ms ease-in transform'
     sliderLineR.style.transform = 'translate(-' + countR * widthR/3 + 'px)';
+    if (window.matchMedia("(max-width: 999px)").matches) {
+        sliderLineR.style.transform = 'translate(-' + countR * widthR/2 + 'px)'; ;
+    };
     sliderLineR.style.transition = '800ms ease transform';
 
 }
