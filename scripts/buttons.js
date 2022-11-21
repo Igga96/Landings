@@ -4,7 +4,7 @@ const textOn = document.querySelector('.text__on');
 const textOff = document.querySelector('.text__off');
 const textOnHidden = document.querySelector('.text__on-hidden');
 const textOffHidden = document.querySelector('.text__off-hidden');
-const imgHidden = document.querySelector('.hidden__img-active');
+const imgHidden = document.querySelector('.product__hidden-img');
 const bg1 = document.querySelector('.container__bg1');
 
 
@@ -26,7 +26,7 @@ function darkBg() {
     textOffHidden.classList.toggle('text__button-active')
     textOnHidden.classList.toggle('text__button-active')
     bg1.classList.toggle('bg__active')
-imgHidden.style.display = 'block'
+    imgHidden.classList.toggle('hidden__img-active')
 
 }
 
