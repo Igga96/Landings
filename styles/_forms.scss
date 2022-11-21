@@ -1,7 +1,7 @@
 .overlay {
     display: none;
     position: fixed;
-    top: 0; 
+    top: 0;
     height: 100vh;
     width: 100vw;
     z-index: 9000;
@@ -43,6 +43,15 @@
 }
 
 .hidden__form-title {
+    font-size: 40px;
+    line-height: 46px;
+    color: #363636;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 79px;
+}
+
+.hidden__form-title2 {
     font-size: 40px;
     line-height: 46px;
     color: #363636;
@@ -101,22 +110,69 @@
     }
 }
 
-.form__stage1 {}
-
-.form__stage2 {
-    position: relative;
+.form__reviews-stage2 {
     display: none;
-    text-align: center;
+    position: fixed;
+    top: calc(50% - 323px);
+    right: calc(50% - 315px);
+    z-index: 10000000;
+    border-radius: 10%;
+    background-color: #E6E6E6;
 }
+
+.form__sale-stage2 {
+    display: none;
+    background-color: #E6E6E6;
+    border-radius: 10%;
+    position: fixed;
+    top: calc(50% - 323px);
+    right: calc(50% - 315px);
+    z-index: 10000000;
+}
+
+.stage2__content {
+    padding: 84px 84px 38px;
+    text-align: center;
+
+    .hidden__form-title1 {
+        font-size: 48px;
+        line-height: 100%;
+        color: #A41B1B;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .hidden__form-title2 {
+        font-size: 40px;
+        line-height: 100%;
+        color: #363636;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+
+    }
+
+    .hidden__form-title3 {
+        font-size: 32px;
+        max-width: 462px;
+        color: #363636;
+        padding-bottom: 40px;
+        margin: 0;
+        line-height: 100%;
+
+    }
+}
+
 
 .hidden__form-img {
     content: url(../pictures/thnk.png);
     transform: rotate(20deg);
     max-height: 200px;
-    margin-bottom: 50px;
-
-
+    margin-bottom: 40px;
 }
+
+
 
 .form__close {
     background: #E6E6E6;
@@ -142,7 +198,8 @@
         top: calc(50% - 305px);
         left: calc(50% - 250px);
 
-        .reviews__hidden-content {
+        .reviews__hidden-content,
+        .stage2__content {
             padding: 52px 65px 52px;
 
         }
@@ -199,21 +256,65 @@
         }
     }
 
-    .hidden__form-img {
-        content: url(../pictures/thnk.png);
-
-        max-height: 170px;
-        margin-bottom: 30px;
-        left: 100px;
-    }
-
     .form__close {
         .close__img {
             max-width: 26px;
 
         }
     }
+
+
+    .form__sale-stage2 {
+        top: calc(50% - 205px);
+        right: calc(50% - 185px);
+
+        .stage2__content {
+            padding: 40px 55px 30px;
+
+
+
+            .hidden__form-title1 {
+                font-size: 32px;
+                line-height: 100%;
+                padding-bottom: 15px;
+            }
+
+            .hidden__form-title2 {
+                font-size: 24px;
+                line-height: 30px;
+                padding-bottom: 15px;
+            }
+
+            .hidden__form-title3 {
+                font-size: 18px;
+                line-height: 100%;
+                max-width: 262px;
+                padding-bottom: 30px;
+            }
+
+        }
+    }
+
+    .hidden__form-img {
+        content: url(../pictures/thnk.png);
+        transform: rotate(20deg);
+        max-height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .form__reviews-stage2 {
+        top: calc(50% - 182px);
+        right: calc(50% - 219px);
+
+        .stage2__content {
+            padding: 40px 55px 30px;
+        }
+
+    }
 }
+
+
+
 
 @media screen and (max-width: 999px) {
     .reviews__form-hidden {
@@ -279,18 +380,59 @@
         }
     }
 
-    .hidden__form-img {
-        content: url(../pictures/thnk.png);
-
-        max-height: 100px;
-        margin-bottom: 30px;
-        left: 70px;
-    }
-
     .form__close {
         .close__img {
             max-width: 20px;
 
         }
     }
+
+    .form__sale-stage2 {
+        top: calc(50% - 142px);
+        right: calc(50% - 140px);
+
+        .stage2__content {
+            padding: 20px 10px 20px;
+
+
+
+            .hidden__form-title1 {
+                font-size: 20px;
+                line-height: 46px;
+                padding-bottom: 5px;
+            }
+
+            .hidden__form-title2 {
+                font-size: 16px;
+                line-height: 30px;
+                padding-bottom: 5px;
+            }
+
+            .hidden__form-title3 {
+                font-size: 14px;
+                line-height: 100%;
+                max-width: 262px;
+                padding-bottom: 10px;
+
+
+            }
+        }
+    }
+    .form__reviews-stage2 {
+        top: calc(50% - 116px);
+        right: calc(50% - 117px);
+
+        .stage2__content {
+            padding: 40px 35px 30px;
+        }
+
+    }
+
+    .hidden__form-img {
+        content: url(../pictures/thnk.png);
+        transform: rotate(20deg);
+        max-height: 100px;
+        margin-bottom: 10px;
+    }
+
 }
