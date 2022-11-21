@@ -7,14 +7,14 @@ const sliderLineR = document.querySelector('.reviews__slider-line');
 const imagesR = document.querySelectorAll('.review__card');
 const scrollR = document.querySelector('.reviews__slider-scroll');//input range
 
-let scrollMaxR = scroll.max/2
+let scrollMaxR = scroll.max
 let scrollMinR = scroll.min
-let scrollValueR = scroll.value;
+let scrollValueR = scrollR.value;
 let countR = scroll.value;
 let widthR;
 
 
-function init() {
+function inits() {
     widthR = sliderR.offsetWidth;
     sliderLineR.style.width = widthR - imagesR.length + 'px';
     imagesR.forEach(item => {
@@ -23,10 +23,10 @@ function init() {
             item.style.width = widthR +'px';
         };
     });
-    rollSlider();
+    rollSliders();
 }
-init();
-window.addEventListener('resize', init);
+inits();
+window.addEventListener('resize', inits);
 
 btnRightR.addEventListener('click', function () {
     countR++
@@ -34,35 +34,36 @@ btnRightR.addEventListener('click', function () {
         countR = 0;
     }
     scrollValueR++
-    if (scrollValueR >= (scrollMaxR)) {
+    if (scrollValueR >= scrollMaxR) {
         scrollValueR = scrollMinR
     }
-    rollSlider();
+    rollSliders();
 });
 
 btnLeftR.addEventListener('click', function () {
     countR--;
     if (countR < 0) {
-        countR = imagesR.length/2 - 1;
+        countR = imagesR.length/3;
     }
     scrollValueR--
     if (scrollValueR < scrollMinR) {
         scrollValueR = scrollMaxR
     }
-    rollSlider();
+    rollSliders();
 });
 
-function rollSlider() {
+function rollSliders() {
     scroll.value = countR
     scroll.style.transition = '1000ms ease-in transform'
-    sliderLineR.style.transform = 'translate(-' + countR * widthR/2 + 'px)';
+    sliderLineR.style.transform = 'translate(-' + countR * widthR/3 + 'px)';
     sliderLineR.style.transition = '800ms ease transform';
 
 }
 
 //slider scroll
-scroll.addEventListener("input", () => {
-    let scrollValue = scroll.value
+scrollR.addEventListener("input", () => {
+    let scrollValueR = scroll.value
+   let wdthRv = imagesR.clientWidth;
     sliderLineR.style.transition = '800ms ease transform';
-    sliderLineR.style.transform = `translateX(${-scrollValue * (widthR)}px)`;
+    sliderLineR.style.transform = `translateX(${-scrollValueR * (wdthRv)}px)`;
 });
