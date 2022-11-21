@@ -20,13 +20,13 @@ for (const btnDark of btnsDark) {
 }
 
 function darkBg() {
-    myBody.classList.toggle('dark')
-    textOff.classList.toggle('text__button-active')
-    textOn.classList.toggle('text__button-active')
-    textOffHidden.classList.toggle('text__button-active')
-    textOnHidden.classList.toggle('text__button-active')
     bg1.classList.toggle('bg__active')
+    myBody.classList.toggle('dark')
+    textOn.classList.toggle('text__button-active')
+    textOff.classList.toggle('text__button-active')
     imgHidden.classList.toggle('hidden__img-active')
+    textOnHidden.classList.toggle('text__button-active')
+    textOffHidden.classList.toggle('text__button-active')
 
 }
 
