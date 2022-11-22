@@ -1894,6 +1894,7 @@ footer .footer__link {
     padding-bottom: 0;
   }
   .review__card p {
+    max-width: 170px;
     font-size: 10px;
     width: 225px;
   }
