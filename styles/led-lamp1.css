@@ -1734,6 +1734,7 @@ footer .footer__link {
 .review__card p {
   font-size: 20px;
   line-height: 120%;
+  margin: 0;
 }
 
 .card__star5 {
@@ -1880,10 +1881,10 @@ footer .footer__link {
   .review__card .review__card-name {
     width: 100px;
     padding-bottom: 2px;
-    font-size: 11px;
+    font-size: 10px;
   }
   .review__card .review__card-date {
-    font-size: 11px;
+    font-size: 10px;
   }
   .review__card .review__card-place {
     padding-bottom: 1px;
@@ -2383,6 +2384,15 @@ footer .footer__link {
 }
 
 .sale .container .sale__content .sale__content-lamp .sale__form .sale__count-lamp button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #FFFFFF;
   color: #363636;
   width: 52.87px;
