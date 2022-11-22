@@ -87,6 +87,9 @@
                         }
 
                         button {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             background: #FFFFFF;
                             color: #363636;
                             width: 52.87px;
