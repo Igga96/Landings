@@ -1879,7 +1879,7 @@ footer .footer__link {
     padding: 1px 23px 22px;
   }
   .review__card .review__card-name {
-    width: 100px;
+    width: 70px;
     padding-bottom: 2px;
     font-size: 10px;
   }
@@ -1894,6 +1894,7 @@ footer .footer__link {
     padding-bottom: 0;
   }
   .review__card p {
+    max-width: 170px;
     font-size: 10px;
     width: 225px;
   }

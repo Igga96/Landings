@@ -1,72 +1,61 @@
 
 //reviews__section - slider
-const btnLeftR = document.querySelector('.button__reviews-left'); //
-const btnRightR = document.querySelector('.button__reviews-right');
-const sliderR = document.querySelector('.reviews__slider');
-const sliderLineR = document.querySelector('.reviews__slider-line');
-const imagesR = document.querySelectorAll('.review__card');
-const scrollR = document.querySelector('.reviews__slider-scroll');//input range
+const reviewsBtnLeft = document.querySelector('.button__reviews-left'); //
+const reviewsBtnRight = document.querySelector('.button__reviews-right');
+const reviewsSlider = document.querySelector('.reviews__slider');
+const reviewsSliderLine = document.querySelector('.reviews__slider-line');
+const reviewsItems = document.querySelectorAll('.review__card');
+const reviewsScroll = document.querySelector('.reviews__slider-scroll');//input range
 
-let scrollMaxR = scroll.max
-let scrollMinR = scroll.min
-let scrollValueR = scrollR.value;
-let countR = scroll.value;
-let widthR;
-
-
-function inits() {
-    widthR = sliderR.offsetWidth;
-    sliderLineR.style.width = widthR - imagesR.length + 'px';
-    imagesR.forEach(item => {
-        item.style.width = widthR/2 + 'px';
+let reviewsCount = reviewsScroll.value;
+let reviewsCountMax = reviewsScroll.max
+function reviewsInit() {
+    widthR = reviewsSlider.offsetWidth;
+    reviewsSliderLine.style.width = widthR - reviewsItems.length + 'px';
+    reviewsItems.forEach(item => {
+        item.style.width = widthR / 2 + 'px';
         if (window.matchMedia("(max-width: 999px)").matches) {
-            item.style.width = widthR +'px';
+            item.style.width = widthR + 'px';
         };
+
     });
-    rollSliders();
+    reviewsRollSlider();
 }
-inits();
-window.addEventListener('resize', inits);
 
-btnRightR.addEventListener('click', function () {
-    countR++
-    if (countR >= imagesR.length/2) {
-        countR = 0;
+reviewsInit();
+window.addEventListener('resize', reviewsInit);
+
+
+
+reviewsBtnRight.addEventListener('click', function () {
+    reviewsCount++
+    if (reviewsCount >= reviewsItems.length / 2) {
+        reviewsCount = 0;
     }
-    scrollValueR++
-    if (scrollValueR >= scrollMaxR) {
-        scrollValueR = scrollMinR
+    reviewsRollSlider();
+});
+reviewsBtnLeft.addEventListener('click', function () {
+    reviewsCount--;
+    if (reviewsCount < 0) {
+        reviewsCount = reviewsItems.length - 1;
     }
-    rollSliders();
+    reviewsRollSlider();
 });
 
-btnLeftR.addEventListener('click', function () {
-    countR--;
-    if (countR < 0) {
-        countR = imagesR.length/3;
-    }
-    scrollValueR--
-    if (scrollValueR < scrollMinR) {
-        scrollValueR = scrollMaxR
-    }
-    rollSliders();
-});
-
-function rollSliders() {
-    scroll.value = countR
-    scroll.style.transition = '1000ms ease-in transform'
-    sliderLineR.style.transform = 'translate(-' + countR * widthR/3 + 'px)';
+function reviewsRollSlider() {
+    reviewsScroll.value = reviewsCount
+    reviewsScroll.style.transition = '1000ms ease-in transform'
+    reviewsSliderLine.style.transform = 'translate(-' + reviewsCount * widthR / (reviewsCountMax) + 'px)';
     if (window.matchMedia("(max-width: 999px)").matches) {
-        sliderLineR.style.transform = 'translate(-' + countR * widthR/2 + 'px)'; ;
-    };
-    sliderLineR.style.transition = '800ms ease transform';
+        reviewsSliderLine.style.transform = 'translate(-' + reviewsCount * widthR / (reviewsCountMax) + 'px)';
+    }
+    reviewsSliderLine.style.transition = '800ms ease transform';
 
 }
 
 //slider scroll
-scrollR.addEventListener("input", () => {
-    let scrollValueR = scroll.value
-   let wdthRv = imagesR.clientWidth;
-    sliderLineR.style.transition = '800ms ease transform';
-    sliderLineR.style.transform = `translateX(${-scrollValueR * (wdthRv)}px)`;
+reviewsScroll.addEventListener("input", () => {
+    let reviewsScrollValue = reviewsScroll.value
+    reviewsSliderLine.style.transition = '800ms ease transform';
+    reviewsSliderLine.style.transform = `translateX(${-reviewsScrollValue * (widthR)}px)`;
 });
