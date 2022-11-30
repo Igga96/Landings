@@ -1354,12 +1354,12 @@ footer .footer__link {
   .info .info__content .hidden__container .info__hidden .info__hidden-config .config__hidden-item {
     width: 140px;
     height: 56px;
-    padding-left: 12px;
+    padding-left: 10px;
   }
   .info .info__content .hidden__container .info__hidden .info__hidden-config .config__hidden-item .config__text {
     font-size: 10px;
     line-height: 120%;
-    padding-left: 12px;
+    padding-left: 10px;
   }
   .info .info__content .hidden__container .info__hidden .info__hidden-config .config__hidden-item div {
     height: 22px;
