@@ -1,68 +1,54 @@
 //info__section - slider
-const btnLeft = document.querySelector('.button__info-left'); //
-const btnRight = document.querySelector('.button__info-right');
-const slider = document.querySelector('.slider');
-const sliderLine = document.querySelector('.slider__line');
-const images = document.querySelectorAll('.slider__image');
-const scroll = document.querySelector('.info__slider-scroll');//input range
+const infoBtnLeft = document.querySelector('.button__info-left'); //
+const infoBtnRight = document.querySelector('.button__info-right');
+const infoSlider = document.querySelector('.slider');
+const infoSliderLine = document.querySelector('.slider__line');
+const infoItems = document.querySelectorAll('.slider__image');
+const infoScroll = document.querySelector('.info__slider-scroll');//input range
 
-let scrollMax = scroll.max
-let scrollMin = scroll.min
-let scrollValue = scroll.value;
-let count = scroll.value;
-let width;
+let infoCount = infoScroll.value; ////
 
-
-
-function init() {
-    width = slider.offsetWidth;
-    sliderLine.style.width = width - images.length + 'px';
-    images.forEach(item => {
+function infoInit() {
+    width = infoSlider.offsetWidth;
+    infoSliderLine.style.width = width - infoItems.length + 'px';
+    infoItems.forEach(item => {
         item.style.width = width + 'px';
         item.style.height = 'auto';
     });
-    rollSlider();
+    infoRollSlider();
 }
 
-init();
-window.addEventListener('resize', init);
+infoInit();
+window.addEventListener('resize', infoInit);
 
-btnRight.addEventListener('click', function () {
-    count++
-    if (count >= images.length) {
-        count = 0;
+infoBtnRight.addEventListener('click', function () {
+    infoCount++
+    if (infoCount >= infoItems.length) {
+        infoCount = 0;
     }
-    scrollValue++
-    if (scrollValue >= (scrollMax)) {
-        scrollValue = scrollMin
+    
+         infoRollSlider();
+});
+infoBtnLeft.addEventListener('click', function () {
+
+    infoCount--;
+    if (infoCount < 0) {
+        infoCount = infoItems.length - 1;
     }
-    rollSlider();
+        infoRollSlider();
 });
 
-btnLeft.addEventListener('click', function () {
-
-    count--;
-    if (count < 0) {
-        count = images.length - 1;
-    }
-    scrollValue--
-    if (scrollValue < scrollMin) {
-        scrollValue = scrollMax
-    }
-    rollSlider();
-});
-
-function rollSlider() {
-    scroll.value = count
-    scroll.style.transition = '1000ms ease-in transform'
-    sliderLine.style.transform = 'translate(-' + count * width + 'px)';
-    sliderLine.style.transition = '800ms ease transform';
+function infoRollSlider() {
+    infoScroll.value = infoCount
+    infoScroll.style.transition = '1000ms ease-in transform'
+    infoSliderLine.style.transform = 'translate(-' + infoCount * width + 'px)';
+    infoSliderLine.style.transition = '800ms ease transform';
 
 }
 
 //slider scroll
-scroll.addEventListener("input", () => {
-    let scrollValue = scroll.value
-    sliderLine.style.transition = '800ms ease transform';
-    sliderLine.style.transform = `translateX(${-scrollValue * (width)}px)`;
+infoScroll.addEventListener("input", () => {
+    let infoScrollValue = infoScroll.value
+    infoSliderLine.style.transition = '800ms ease transform';
+    infoSliderLine.style.transform = `translateX(${-infoScrollValue * (width)}px)`;
 });
