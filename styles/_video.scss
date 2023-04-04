@@ -1,0 +1,120 @@
+.video {
+    .container {
+        background: url(../pictures/video/v_bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+
+        .video__content {
+            display: inline-flex;
+            align-items: center;
+            gap: 167px;
+            padding: 260px 230px 260px 140px;
+
+            .video__frame {
+                width: 812.54px;
+                height: 799px;
+                video {
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                }
+            }
+
+            .video__text {
+                p {
+                    width: 442px;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1919px) {
+    .video {
+        .container {
+            .video__content {
+                gap: 100px;
+                padding: 119px 280px 120px 0;
+
+                .video__frame {
+                    width: 660px;
+                    height: 649px;
+                }
+
+                .video__text {
+                    p {
+                        width: 340px;
+                        font-size: 24px;
+                        line-height: 120%;
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1599px) {
+    .video {
+
+        .container {
+            .video__content {
+                gap: 60px;
+                padding: 67px 110px 67px 0;
+
+                .video__frame {
+                    width: 480px;
+                    height: 472px;
+                }
+
+                .video__text {
+                    p {
+                        width: 320px;
+                        font-size: 22px;
+
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 999px) {
+    .video {
+
+        .container {
+            background-size: 220%;
+
+            .video__content {
+                gap: 22px;
+                padding: 30px 30px 21px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .video__frame {
+                    width: 300px;
+                    height: 296px;
+                    order: 2;
+                }
+
+                .video__text {
+                    order: 1;
+
+                    p {
+                        width: 267px;
+                        font-size: 12px;
+
+                    }
+
+                }
+            }
+        }
+    }
+}
